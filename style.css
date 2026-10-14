@@ -1,0 +1,85 @@
+/* FIT3179 Native Australian Mammals — blue/orange editorial theme. */
+:root {
+  --bg: #F5F9FC;
+  --paper: #FAFCFE;
+  --card: #FFFFFF;
+  --ink: #223E52;
+  --muted: #536D7E;
+  --blue: #336D91;
+  --orange: #D9794B;
+  --border: #DCE7EF;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--bg); color: var(--ink); font-family: Arial,Helvetica,sans-serif; line-height: 1.5; }
+.editorial-header, main, footer { width: calc(100% - 40px); max-width: 1320px; margin-left: auto; margin-right: auto; }
+.editorial-header { margin-top: 18px; margin-bottom: 15px; padding: 30px 35px; background: var(--paper); border: 1px solid var(--border); border-radius: 14px; }
+.header-content { display: flex; justify-content: space-between; gap: 32px; align-items: flex-start; }
+.heading-copy { min-width: 0; max-width: 1020px; }
+.editorial-header h1 { font-family: Georgia,'Times New Roman',serif; font-size: clamp(37px, 4.4vw, 62px); font-weight: 700; line-height: 1.1; letter-spacing: -.025em; margin: 0 0 12px; color: #193D55; }
+.hero-subtitle { font-family: Georgia,'Times New Roman',serif; font-size: clamp(19px,2vw,27px); font-weight: bold; color: var(--blue); margin: 0 0 18px; }
+.hero-intro { max-width: 900px; font-size: 17px; line-height: 1.7; color: #3E586B; margin: 0; }
+.header-image { width: 125px; height: 125px; object-fit: cover; border: 1px solid var(--border); border-radius: 11px; flex-shrink: 0; }
+main { margin-bottom: 20px; }
+section { background: var(--paper); border: 1px solid var(--border); border-radius: 13px; padding: 20px; margin: 0 0 14px; }
+section h2 { color: #2E6283; font-size: clamp(24px,2.5vw,31px); margin: 0 0 15px; }
+.chart-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 15px; }
+.chart-card { min-width: 0; min-height: 0; padding: 16px; background: var(--card); border: 1px solid var(--border); border-radius: 11px; overflow: hidden; }
+.chart-card h3 { font-size: 17px; line-height: 1.4; color: #315D79; margin: 0 0 8px; }
+.vis { display: flex; justify-content: center; align-items: center; min-width: 0; max-width: 100%; min-height: 275px; }
+.vis .vega-embed { min-width: 0; max-width: 100%; }
+.vis svg { max-width: 100%; height: auto; }
+.map-vis { min-height: 340px; }
+.status-legend { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 11px 22px; padding: 14px 0 0; font-size: 13px; }
+.status-legend span { display: inline-flex; align-items: center; gap: 7px; }
+.status-legend i { width: 13px; height: 13px; display: inline-block; border-radius: 2px; }
+.status-legend b { font-size: 13px; color: #183F55; }
+/* Compact, meaningful map-scale legends: no separate state chips */
+.map-key { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 10px; margin: 0 auto 5px; font-size: 12px; color: #496579; }
+.map-gradient { width: 110px; height: 11px; display: inline-block; border-radius: 6px; background: linear-gradient(90deg, #DAEAF3, #3D7FA3); }
+.size-demo { height: 22px; display: flex; align-items: center; gap: 5px; }
+.size-demo i { display: inline-block; border: 1px solid #BC6845; background: #E69A73; width: 8px; height: 8px; border-radius: 50%; }
+.size-demo i:nth-child(2){width:14px;height:14px}
+.size-demo i:nth-child(3){width:22px;height:22px}
+.wide-chart { margin-top: 15px; }
+footer { color: #62788A; font-size: 12px; padding: 5px 4px 24px; }
+footer a { color: #2B668B; }
+@media(max-width: 960px) { .chart-grid{grid-template-columns: 1fr;} }
+@media(max-width: 670px) {
+ .editorial-header,main,footer{width:calc(100% - 20px)}
+ .editorial-header{padding:20px 18px;margin-top:10px}
+ .header-content{gap:12px}
+ .header-image{width:74px;height:80px}
+ .hero-intro{font-size:14px}
+ section{padding:12px}
+ .chart-card{padding:10px}
+}
+
+/* Ranked chart: short interpretation displayed alongside its data */
+.ranking-layout { display: grid; grid-template-columns: minmax(0, 1fr) 270px; align-items: center; column-gap: 26px; }
+.ranking-chart { min-width: 0; }
+.ranking-chart .vis { justify-content: flex-start; min-height: 340px; }
+.ranking-explanation { padding: 17px 18px; background: #F3F8FB; border-left: 3px solid #D9794B; border-radius: 3px 10px 10px 3px; color: #38566A; }
+.ranking-explanation h4 { margin: 0 0 12px; font-size: 17px; color: #244D69; }
+.ranking-explanation p { margin: 0 0 13px; font-size: 14px; line-height: 1.65; }
+.ranking-explanation p:last-child { margin-bottom: 0; }
+@media (max-width: 1100px) {
+  .ranking-layout { grid-template-columns: minmax(0,1fr); row-gap: 12px; }
+  .ranking-explanation { max-width: 700px; }
+}
+
+/* Keep the ranking explanation beside its chart without squeezing labels. */
+.ranking-explanation strong {color: #234D6D;}
+@media (min-width:1101px) { .ranking-layout { grid-template-columns: minmax(0, 1fr) 285px; } }
+
+/* Ranking chart and short adjacent interpretation */
+.ranking-layout { grid-template-columns: minmax(0, 1fr) 280px; gap: 20px; align-items: center; }
+.ranking-chart { min-width: 0; }
+.ranking-explanation { background: #F3F8FB; border-left: 3px solid var(--orange); padding: 20px; }
+.ranking-explanation h4 { font-size: 17px; line-height: 1.4; }
+.ranking-explanation .ala-link { margin-top: 16px; font-size: 13px; }
+.ranking-explanation a { color: var(--blue); text-decoration: underline; text-underline-offset: 2px; }
+@media(max-width: 950px) {
+  .ranking-layout { grid-template-columns: 1fr; }
+  .ranking-explanation { max-width: none; }
+}

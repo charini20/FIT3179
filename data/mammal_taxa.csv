@@ -1,0 +1,153 @@
+common_name,scientific_name,status,family,breadth,taxon_id
+Silver-headed Antechinus,Antechinus argentus,Endangered,Dasyuridae,1,88218
+Black-tailed Antechinus,Antechinus arktos,Endangered,Dasyuridae,2,88217
+Fawn Antechinus,Antechinus bellus,Vulnerable,Dasyuridae,1,344
+Swamp Antechinus (mainland),Antechinus minimus maritimus,Vulnerable,Dasyuridae,2,83086
+Subantarctic Fur-seal,Arctocephalus tropicalis,Endangered,Otariidae,1,25909
+Sei Whale,Balaenoptera borealis,Vulnerable,Balaenopteridae,6,34
+Blue Whale,Balaenoptera musculus,Endangered,Balaenopteridae,7,36
+Fin Whale,Balaenoptera physalus,Vulnerable,Balaenopteridae,6,37
+Desert Bettong,Bettongia anhydra,Extinct,Potoroidae,2,64791
+Eastern Bettong (mainland),Bettongia gaimardi gaimardi,Extinct,Potoroidae,4,66656
+Boodie,Bettongia lesueur Barrow and Boodie Islands subspecies,Vulnerable,Potoroidae,1,88021
+Boodie (inland),Bettongia lesueur graii,Extinct,Potoroidae,5,66657
+Burrowing Bettong (Shark Bay),Bettongia lesueur lesueur,Vulnerable,Potoroidae,3,66659
+Woylie,Bettongia penicillata ogilbyi,Endangered,Potoroidae,3,66844
+Brush-tailed Bettong (central and south-east),Bettongia penicillata penicillata,Extinct,Potoroidae,6,66658
+Nullarbor Dwarf Bettong,Bettongia pusilla,Extinct,Potoroidae,2,85133
+Northern Bettong,Bettongia tropica,Endangered,Potoroidae,2,214
+Mountain Pygmy-possum,Burramys parvus,Endangered,Burramyidae,2,267
+Desert Rat-kangaroo,Caloprymnus campestris,Extinct,Potoroidae,2,215
+Pig-footed Bandicoot,Chaeropus ecaudatus,Extinct,Peramelidae,6,297
+Yirratji,Chaeropus yirratji,Extinct,Peramelidae,4,90573
+Large-eared Pied Bat,Chalinolobus dwyeri,Endangered,Vespertilionidae,2,183
+White-footed Rabbit-rat,Conilurus albipes,Extinct,Muridae,4,131
+Capricorn Rabbit-rat,Conilurus capricornensis,Extinct,Muridae,1,87615
+Brush-tailed Rabbit-rat,Conilurus penicillatus,Vulnerable,Muridae,3,132
+Christmas Island Shrew,Crocidura trichura,Critically Endangered,Soricidae,0,86568
+Kowari,Dasyuroides byrnei,Endangered,Dasyuridae,3,329
+Chuditch,Dasyurus geoffroii,Vulnerable,Dasyuridae,7,330
+Northern Quoll,Dasyurus hallucatus,Endangered,Dasyuridae,3,331
+Spotted-tailed Quoll (North Queensland),Dasyurus maculatus gracilis,Endangered,Dasyuridae,1,64475
+Spotted-tail Quoll,Dasyurus maculatus maculatus (SE mainland population),Endangered,Dasyuridae,5,75184
+Spotted-tail Quoll,Dasyurus maculatus maculatus (Tasmanian population),Vulnerable,Dasyuridae,1,75183
+Eastern Quoll,Dasyurus viverrinus,Endangered,Dasyuridae,5,333
+Southern Right Whale,Eubalaena australis,Endangered,Balaenidae,6,40
+Leadbeater's Possum,Gymnobelideus leadbeateri,Critically Endangered,Petauridae,2,273
+Lemuroid Ringtail Possum,Hemibelideus lemuroides,Endangered,Pseudocheiridae,1,274
+Arnhem Leaf-nosed Bat,Hipposideros inornatus,Endangered,Hipposideridae,1,86675
+Semon's Leaf-nosed Bat,Hipposideros semoni,Vulnerable,Hipposideridae,1,180
+Golden Bandicoot (mainland),Isoodon auratus auratus,Vulnerable,Peramelidae,6,66665
+Golden Bandicoot (Barrow Island),Isoodon auratus barrowensis,Vulnerable,Peramelidae,1,66666
+Southern Brown Bandicoot (Nuyts Archipelago),Isoodon obesulus nauticus,Vulnerable,Peramelidae,1,66667
+Southern Brown Bandicoot (eastern),Isoodon obesulus obesulus,Endangered,Peramelidae,4,68050
+Kuluwarri,Lagorchestes asomatus,Extinct,Macropodidae,2,243
+Spectacled Hare-wallaby (Barrow Island),Lagorchestes conspicillatus conspicillatus,Vulnerable,Macropodidae,1,66661
+Rufous Hare-wallaby (Bernier Island),Lagorchestes hirsutus bernieri,Vulnerable,Macropodidae,1,66662
+Mala,Lagorchestes hirsutus Central Australian subspecies,Endangered,Macropodidae,4,88019
+Rufous Hare-wallaby (Dorre Island),Lagorchestes hirsutus dorreae,Vulnerable,Macropodidae,1,66663
+Rufous Hare-wallaby (south-western),Lagorchestes hirsutus hirsutus,Extinct,Macropodidae,1,66655
+Eastern Hare-wallaby,Lagorchestes leporides,Extinct,Macropodidae,4,246
+Banded Hare-wallaby (mainland),Lagostrophus fasciatus albipilis,Extinct,Macropodidae,1,66654
+Banded Hare-wallaby,Lagostrophus fasciatus fasciatus,Vulnerable,Macropodidae,1,66664
+Northern Hairy-nosed Wombat,Lasiorhinus krefftii,Critically Endangered,Vombatidae,2,198
+Lesser Stick-nest Rat,Leporillus apicalis,Extinct,Muridae,5,136
+Wopilkara,Leporillus conditor,Vulnerable,Muridae,3,137
+Ghost Bat,Macroderma gigas,Vulnerable,Megadermatidae,4,174
+Greater Bilby,Macrotis lagotis,Vulnerable,Thylacomyidae,5,282
+Yallara,Macrotis leucura,Extinct,Thylacomyidae,4,283
+Broad-toothed Rat (mainland),Mastacomys fuscus mordicus,Endangered,Muridae,4,87617
+Bramble Cay Melomys,Melomys rubicola,Extinct,Muridae,1,64477
+Black-footed Tree-rat (Kimberley and mainland Northern Territory),Mesembriomys gouldii gouldii,Endangered,Muridae,2,87618
+Black-footed Tree-rat (Melville Island),Mesembriomys gouldii melvillensis,Vulnerable,Muridae,1,87619
+Black-footed Tree-rat (north Queensland),Mesembriomys gouldii rattoides,Vulnerable,Muridae,1,87620
+Southern Bent-wing Bat,Miniopterus orianae bassanii,Critically Endangered,Miniopteridae,2,87645
+Southern Elephant Seal,Mirounga leonina,Vulnerable,Phocidae,2,26
+Numbat,Myrmecobius fasciatus,Endangered,Myrmecobiidae,4,294
+Australian Sea-lion,Neophoca cinerea,Endangered,Otariidae,3,22
+Toolache Wallaby,Notamacropus greyi,Extinct,Macropodidae,2,89288
+Parma Wallaby,Notamacropus parma,Vulnerable,Macropodidae,1,89289
+Short-tailed Hopping-mouse,Notomys amplus,Extinct,Muridae,3,122
+Northern Hopping-mouse,Notomys aquilo,Endangered,Muridae,2,123
+Dusky Hopping-mouse,Notomys fuscus,Vulnerable,Muridae,4,125
+Long-tailed Hopping-mouse,Notomys longicaudatus,Extinct,Muridae,4,126
+Large-eared Hopping-mouse,Notomys macrotis,Extinct,Muridae,1,101
+Darling Downs Hopping-mouse,Notomys mordax,Extinct,Muridae,2,103
+Broad-cheeked Hopping-mouse,Notomys robustus,Extinct,Muridae,1,87621
+Corben's Long-eared Bat,Nyctophilus corbeni,Vulnerable,Vespertilionidae,4,83395
+Lord Howe Long-eared Bat,Nyctophilus howensis,Extinct,Vespertilionidae,1,66869
+Bridled Nail-tail Wallaby,Onychogalea fraenata,Endangered,Macropodidae,4,239
+Crescent Nailtail Wallaby,Onychogalea lunata,Extinct,Macropodidae,4,240
+Australian Snubfin  Dolphin,Orcaella heinsohni,Vulnerable,Delphinidae,3,81322
+Barrow Island Wallaroo,Osphranter robustus isabellinus,Vulnerable,Macropodidae,1,89262
+Dibbler,Parantechinus apicalis,Endangered,Dasyuridae,1,313
+Shark Bay Bandicoot,Perameles bougainville,Endangered,Peramelidae,3,278
+Western Barred Bandicoot (eastern),Perameles bougainville fasciata,Extinct,Peramelidae,1,66652
+Desert Bandicoot,Perameles eremiana,Extinct,Peramelidae,3,279
+Eastern Barred Bandicoot (Tasmania),Perameles gunnii gunnii,Vulnerable,Peramelidae,1,66651
+Eastern Barred Bandicoot (Mainland),Perameles gunnii Victorian subspecies,Endangered,Peramelidae,2,88020
+Marl,Perameles myosurus,Extinct,Peramelidae,1,91673
+South-eastern Striped Bandicoot,Perameles notina,Extinct,Peramelidae,2,89883
+Butterfly Bandicoot,Perameles papillon,Extinct,Peramelidae,2,89865
+Greater Glider (northern),Petauroides minor,Vulnerable,Pseudocheiridae,1,92008
+Greater Glider (southern and central),Petauroides volans,Endangered,Pseudocheiridae,4,254
+Yellow-bellied Glider (south-eastern),Petaurus australis australis,Vulnerable,Petauridae,4,87600
+Yellow-bellied Glider (Wet Tropics),Petaurus australis Wet Tropics subspecies,Endangered,Petauridae,1,88022
+Mahogany Glider,Petaurus gracilis,Endangered,Petauridae,1,26775
+Cape York Rock-wallaby,Petrogale coenensis,Endangered,Macropodidae,1,59278
+Nabarlek (Top End),Petrogale concinna canescens,Endangered,Macropodidae,1,87606
+Nabarlek (Victoria River District),Petrogale concinna concinna,Critically Endangered,Macropodidae,1,87605
+Nabarlek (Kimberley),Petrogale concinna monastria,Endangered,Macropodidae,1,87607
+Warru,Petrogale lateralis centralis,Vulnerable,Macropodidae,3,90831
+Recherche Rock-wallaby,Petrogale lateralis hacketti,Vulnerable,Macropodidae,1,66849
+Wiliji,Petrogale lateralis kimberleyensis,Endangered,Macropodidae,1,90832
+Black-flanked Rock-wallaby,Petrogale lateralis lateralis,Endangered,Macropodidae,1,66647
+Brush-tailed Rock-wallaby,Petrogale penicillata,Vulnerable,Macropodidae,4,225
+Proserpine Rock-wallaby,Petrogale persephone,Endangered,Macropodidae,1,226
+Mount Claro Rock Wallaby,Petrogale sharmani,Vulnerable,Macropodidae,1,59281
+Yellow-footed Rock-wallaby (central-western Queensland),Petrogale xanthopus celeris,Vulnerable,Macropodidae,1,87608
+Yellow-footed Rock-wallaby (SA and NSW),Petrogale xanthopus xanthopus,Vulnerable,Macropodidae,2,66646
+Red-tailed Phascogale,Phascogale calura,Vulnerable,Dasyuridae,5,316
+Northern Brush-tailed Phascogale,Phascogale pirata,Vulnerable,Dasyuridae,1,82954
+Kimberley brush-tailed phascogale,Phascogale tapoatafa kimberleyensis,Vulnerable,Dasyuridae,1,88453
+Koala (combined populations of Queensland,"Phascolarctos cinereus (combined populations of Qld, NSW and the ACT)",Endangered,Phascolarctidae,3,85104
+Christmas Island Pipistrelle,Pipistrellus murrayi,Extinct,Vespertilionidae,0,64383
+Gilbert's Potoroo,Potorous gilbertii,Critically Endangered,Potoroidae,1,66642
+Long-footed Potoroo,Potorous longipes,Endangered,Potoroidae,2,217
+Broad-faced Potoroo,Potorous platyops,Extinct,Potoroidae,1,195
+Long-nosed Potoroo (northern),Potorous tridactylus tridactylus,Vulnerable,Potoroidae,2,66645
+Long-nosed Potoroo (southern mainland),Potorous tridactylus trisulcatus,Vulnerable,Potoroidae,3,86367
+Western Ringtail Possum,Pseudocheirus occidentalis,Critically Endangered,Pseudocheiridae,1,25911
+Long-eared Mouse,Pseudomys auritus,Extinct,Muridae,2,85424
+Plains Rat,Pseudomys australis,Vulnerable,Muridae,5,108
+Shark Bay Mouse,Pseudomys fieldi,Vulnerable,Muridae,3,113
+Smoky Mouse,Pseudomys fumeus,Endangered,Muridae,4,88
+Blue-grey Mouse,Pseudomys glaucus,Extinct,Muridae,2,86804
+Gould's Mouse,Pseudomys gouldii,Extinct,Muridae,5,89
+Pookila,Pseudomys novaehollandiae,Vulnerable,Muridae,5,96
+Hastings River Mouse,Pseudomys oralis,Endangered,Muridae,2,98
+Pilliga Mouse,Pseudomys pilligaensis,Vulnerable,Muridae,1,99
+Heath Mouse,Pseudomys shortridgei,Endangered,Muridae,3,77
+Percy Island Flying-fox,Pteropus brunneus,Extinct,Pteropodidae,1,184
+Spectacled Flying-fox,Pteropus conspicillatus,Endangered,Pteropodidae,1,185
+Christmas Island Flying-fox,Pteropus natalis,Critically Endangered,Pteropodidae,0,87611
+Grey-headed Flying-fox,Pteropus poliocephalus,Vulnerable,Pteropodidae,5,186
+Maclear's Rat,Rattus macleari,Extinct,Muridae,0,25904
+Bulldog Rat,Rattus nativitatis,Extinct,Muridae,0,25905
+Large-eared Horseshoe Bat,Rhinolophus robertsi,Vulnerable,Rhinolophidae,1,87639
+Pilbara Leaf-nosed Bat,Rhinonicteris aurantia (Pilbara form),Vulnerable,Rhinonycteridae,1,82790
+Bare-rumped Sheath-tailed Bat,Saccolaimus saccolaimus nudicluniatus,Vulnerable,Emballonuridae,3,66889
+Tasmanian Devil,Sarcophilus harrisii,Endangered,Dasyuridae,1,299
+Quokka,Setonix brachyurus,Vulnerable,Macropodidae,1,229
+Butler's Dunnart,Sminthopsis butleri,Vulnerable,Dasyuridae,2,302
+Julia Creek Dunnart,Sminthopsis douglasi,Vulnerable,Dasyuridae,1,305
+Kangaroo Island Dunnart,Sminthopsis fuliginosa aitkeni,Endangered,Dasyuridae,1,92894
+Sandhill Dunnart,Sminthopsis psammophila,Endangered,Dasyuridae,3,291
+Australian Humpback Dolphin,Sousa sahulensis,Vulnerable,Delphinidae,4,87942
+Kangaroo Island Echidna,Tachyglossus aculeatus multiaculeatus,Endangered,Tachyglossidae,1,87597
+Thylacine,Thylacinus cynocephalus,Extinct,Thylacinidae,1,342
+Northern Brushtail Possum,Trichosurus vulpecula arnhemensis,Vulnerable,Phalangeridae,2,83091
+Water Mouse,Xeromys myoides,Vulnerable,Muridae,4,66
+Arnhem Rock-rat,Zyzomys maini,Vulnerable,Muridae,1,25906
+Carpentarian Rock-rat,Zyzomys palatalis,Endangered,Muridae,1,25907
+Central Rock-rat,Zyzomys pedunculatus,Critically Endangered,Muridae,2,68

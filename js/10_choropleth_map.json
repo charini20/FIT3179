@@ -1,0 +1,360 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 475,
+  "height": 330,
+  "projection": {
+    "type": "identity",
+    "reflectY": true
+  },
+  "config": {
+    "background": "transparent",
+    "font": "Arial, Helvetica, sans-serif",
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "labelColor": "#506D7F"
+    },
+    "legend": {
+      "labelColor": "#506D7F"
+    }
+  },
+  "layer": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/rowanhogan/australian-states/master/states.min.geojson",
+        "format": {
+          "type": "json",
+          "property": "features"
+        }
+      },
+      "transform": [
+        {
+          "lookup": "properties.STATE_NAME",
+          "from": {
+            "data": {
+              "values": [
+                {
+                  "state": "Australian Capital Territory",
+                  "share": 58.33,
+                  "abbr": "ACT",
+                  "severe_count": 7,
+                  "total_live": 12
+                },
+                {
+                  "state": "New South Wales",
+                  "share": 48.84,
+                  "abbr": "NSW",
+                  "severe_count": 21,
+                  "total_live": 43
+                },
+                {
+                  "state": "Northern Territory",
+                  "share": 39.39,
+                  "abbr": "NT",
+                  "severe_count": 13,
+                  "total_live": 33
+                },
+                {
+                  "state": "Queensland",
+                  "share": 46.94,
+                  "abbr": "QLD",
+                  "severe_count": 23,
+                  "total_live": 49
+                },
+                {
+                  "state": "South Australia",
+                  "share": 50.0,
+                  "abbr": "SA",
+                  "severe_count": 20,
+                  "total_live": 40
+                },
+                {
+                  "state": "Tasmania",
+                  "share": 45.45,
+                  "abbr": "TAS",
+                  "severe_count": 5,
+                  "total_live": 11
+                },
+                {
+                  "state": "Victoria",
+                  "share": 57.14,
+                  "abbr": "VIC",
+                  "severe_count": 16,
+                  "total_live": 28
+                },
+                {
+                  "state": "Western Australia",
+                  "share": 37.5,
+                  "abbr": "WA",
+                  "severe_count": 18,
+                  "total_live": 48
+                }
+              ]
+            },
+            "key": "state",
+            "fields": [
+              "share",
+              "abbr",
+              "severe_count",
+              "total_live"
+            ]
+          }
+        }
+      ],
+      "mark": {
+        "type": "geoshape",
+        "stroke": "#FFFFFF",
+        "strokeWidth": 1.3
+      },
+      "encoding": {
+        "color": {
+          "field": "share",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              37.5,
+              58.33
+            ],
+            "range": [
+              "#D9EBF4",
+              "#3D7FA3"
+            ]
+          },
+          "legend": null
+        },
+        "tooltip": [
+          {
+            "field": "properties.STATE_NAME",
+            "type": "nominal",
+            "title": "State / territory"
+          },
+          {
+            "field": "share",
+            "type": "quantitative",
+            "title": "Severe share (%)",
+            "format": ".1f"
+          },
+          {
+            "field": "severe_count",
+            "type": "quantitative",
+            "title": "Endangered + critical"
+          },
+          {
+            "field": "total_live",
+            "type": "quantitative",
+            "title": "Non-extinct listed entries"
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "abbr": "NSW",
+            "state": "New South Wales",
+            "lon": 146.8,
+            "lat": -32.4,
+            "share": 48.84,
+            "severe_count": 21,
+            "total_live": 43,
+            "pct_label": "48.8%",
+            "count_label": "43"
+          },
+          {
+            "abbr": "NT",
+            "state": "Northern Territory",
+            "lon": 133.3,
+            "lat": -20.4,
+            "share": 39.39,
+            "severe_count": 13,
+            "total_live": 33,
+            "pct_label": "39.4%",
+            "count_label": "33"
+          },
+          {
+            "abbr": "QLD",
+            "state": "Queensland",
+            "lon": 144.9,
+            "lat": -22.7,
+            "share": 46.94,
+            "severe_count": 23,
+            "total_live": 49,
+            "pct_label": "46.9%",
+            "count_label": "49"
+          },
+          {
+            "abbr": "SA",
+            "state": "South Australia",
+            "lon": 135.1,
+            "lat": -29.3,
+            "share": 50.0,
+            "severe_count": 20,
+            "total_live": 40,
+            "pct_label": "50.0%",
+            "count_label": "40"
+          },
+          {
+            "abbr": "TAS",
+            "state": "Tasmania",
+            "lon": 146.8,
+            "lat": -42.0,
+            "share": 45.45,
+            "severe_count": 5,
+            "total_live": 11,
+            "pct_label": "45.5%",
+            "count_label": "11"
+          },
+          {
+            "abbr": "VIC",
+            "state": "Victoria",
+            "lon": 144.9,
+            "lat": -37.8,
+            "share": 57.14,
+            "severe_count": 16,
+            "total_live": 28,
+            "pct_label": "57.1%",
+            "count_label": "28"
+          },
+          {
+            "abbr": "WA",
+            "state": "Western Australia",
+            "lon": 121.6,
+            "lat": -26.0,
+            "share": 37.5,
+            "severe_count": 18,
+            "total_live": 48,
+            "pct_label": "37.5%",
+            "count_label": "48"
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "fontSize": 13,
+        "fontWeight": "bold",
+        "color": "#234961",
+        "dy": -10
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "abbr",
+          "type": "nominal"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "abbr": "NSW",
+            "state": "New South Wales",
+            "lon": 146.8,
+            "lat": -32.4,
+            "share": 48.84,
+            "severe_count": 21,
+            "total_live": 43,
+            "pct_label": "48.8%",
+            "count_label": "43"
+          },
+          {
+            "abbr": "NT",
+            "state": "Northern Territory",
+            "lon": 133.3,
+            "lat": -20.4,
+            "share": 39.39,
+            "severe_count": 13,
+            "total_live": 33,
+            "pct_label": "39.4%",
+            "count_label": "33"
+          },
+          {
+            "abbr": "QLD",
+            "state": "Queensland",
+            "lon": 144.9,
+            "lat": -22.7,
+            "share": 46.94,
+            "severe_count": 23,
+            "total_live": 49,
+            "pct_label": "46.9%",
+            "count_label": "49"
+          },
+          {
+            "abbr": "SA",
+            "state": "South Australia",
+            "lon": 135.1,
+            "lat": -29.3,
+            "share": 50.0,
+            "severe_count": 20,
+            "total_live": 40,
+            "pct_label": "50.0%",
+            "count_label": "40"
+          },
+          {
+            "abbr": "TAS",
+            "state": "Tasmania",
+            "lon": 146.8,
+            "lat": -42.0,
+            "share": 45.45,
+            "severe_count": 5,
+            "total_live": 11,
+            "pct_label": "45.5%",
+            "count_label": "11"
+          },
+          {
+            "abbr": "VIC",
+            "state": "Victoria",
+            "lon": 144.9,
+            "lat": -37.8,
+            "share": 57.14,
+            "severe_count": 16,
+            "total_live": 28,
+            "pct_label": "57.1%",
+            "count_label": "28"
+          },
+          {
+            "abbr": "WA",
+            "state": "Western Australia",
+            "lon": 121.6,
+            "lat": -26.0,
+            "share": 37.5,
+            "severe_count": 18,
+            "total_live": 48,
+            "pct_label": "37.5%",
+            "count_label": "48"
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "fontSize": 12,
+        "fontWeight": "normal",
+        "color": "#234961",
+        "dy": 8
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "pct_label",
+          "type": "nominal"
+        }
+      }
+    }
+  ]
+}

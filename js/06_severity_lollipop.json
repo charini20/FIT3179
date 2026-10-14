@@ -1,0 +1,202 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 430,
+  "height": 310,
+  "data": {
+    "values": [
+      {
+        "abbr": "ACT",
+        "state": "Australian Capital Territory",
+        "total": 12,
+        "total_live": 12,
+        "extinct": 0,
+        "severe_count": 7,
+        "severe_share_pct": 58.33,
+        "vulnerable": 5,
+        "endangered": 7,
+        "critically_endangered": 0
+      },
+      {
+        "abbr": "NSW",
+        "state": "New South Wales",
+        "total": 57,
+        "total_live": 43,
+        "extinct": 14,
+        "severe_count": 21,
+        "severe_share_pct": 48.84,
+        "vulnerable": 22,
+        "endangered": 19,
+        "critically_endangered": 2
+      },
+      {
+        "abbr": "NT",
+        "state": "Northern Territory",
+        "total": 45,
+        "total_live": 33,
+        "extinct": 12,
+        "severe_count": 13,
+        "severe_share_pct": 39.39,
+        "vulnerable": 20,
+        "endangered": 11,
+        "critically_endangered": 2
+      },
+      {
+        "abbr": "QLD",
+        "state": "Queensland",
+        "total": 64,
+        "total_live": 49,
+        "extinct": 15,
+        "severe_count": 23,
+        "severe_share_pct": 46.94,
+        "vulnerable": 26,
+        "endangered": 22,
+        "critically_endangered": 1
+      },
+      {
+        "abbr": "SA",
+        "state": "South Australia",
+        "total": 61,
+        "total_live": 40,
+        "extinct": 21,
+        "severe_count": 20,
+        "severe_share_pct": 50.0,
+        "vulnerable": 20,
+        "endangered": 19,
+        "critically_endangered": 1
+      },
+      {
+        "abbr": "TAS",
+        "state": "Tasmania",
+        "total": 12,
+        "total_live": 11,
+        "extinct": 1,
+        "severe_count": 5,
+        "severe_share_pct": 45.45,
+        "vulnerable": 6,
+        "endangered": 5,
+        "critically_endangered": 0
+      },
+      {
+        "abbr": "VIC",
+        "state": "Victoria",
+        "total": 38,
+        "total_live": 28,
+        "extinct": 10,
+        "severe_count": 16,
+        "severe_share_pct": 57.14,
+        "vulnerable": 12,
+        "endangered": 14,
+        "critically_endangered": 2
+      },
+      {
+        "abbr": "WA",
+        "state": "Western Australia",
+        "total": 68,
+        "total_live": 48,
+        "extinct": 20,
+        "severe_count": 18,
+        "severe_share_pct": 37.5,
+        "vulnerable": 30,
+        "endangered": 15,
+        "critically_endangered": 3
+      }
+    ]
+  },
+  "encoding": {
+    "y": {
+      "field": "abbr",
+      "type": "nominal",
+      "sort": {
+        "field": "severe_share_pct",
+        "order": "descending"
+      },
+      "title": null
+    },
+    "x": {
+      "field": "severe_share_pct",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          0,
+          65
+        ]
+      },
+      "title": "Endangered or critical (%)"
+    },
+    "tooltip": [
+      {
+        "field": "state",
+        "type": "nominal",
+        "title": "State"
+      },
+      {
+        "field": "severe_share_pct",
+        "type": "quantitative",
+        "title": "Severe share (%)",
+        "format": ".1f"
+      },
+      {
+        "field": "severe_count",
+        "type": "quantitative",
+        "title": "Severe listings"
+      }
+    ]
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "bar",
+        "size": 4,
+        "color": "#B5D1E0"
+      }
+    },
+    {
+      "mark": {
+        "type": "circle",
+        "size": 155,
+        "color": "#DE895A",
+        "stroke": "#fff",
+        "strokeWidth": 1.2
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 10,
+        "fontSize": 11,
+        "fontWeight": "bold",
+        "color": "#1D4157"
+      },
+      "encoding": {
+        "text": {
+          "field": "severe_share_pct",
+          "type": "quantitative",
+          "format": ".1f"
+        }
+      }
+    }
+  ],
+  "config": {
+    "background": "transparent",
+    "font": "Arial, Helvetica, sans-serif",
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "labelColor": "#506D7F",
+      "titleColor": "#24475E",
+      "labelFontSize": 11,
+      "titleFontSize": 12,
+      "gridColor": "#E8EFF5",
+      "domainColor": "#D6E5EF",
+      "tickColor": "#D6E5EF"
+    },
+    "legend": {
+      "labelColor": "#506D7F",
+      "titleColor": "#24475E",
+      "labelFontSize": 11,
+      "padding": 4
+    }
+  }
+}

@@ -1,0 +1,1155 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 440,
+  "height": 255,
+  "config": {
+    "background": "transparent",
+    "font": "Arial, Helvetica, sans-serif",
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "labelColor": "#506D7F",
+      "titleColor": "#24475E",
+      "labelFontSize": 11,
+      "titleFontSize": 12,
+      "gridColor": "#E8EFF5",
+      "domainColor": "#D6E5EF",
+      "tickColor": "#D6E5EF"
+    },
+    "legend": {
+      "labelColor": "#506D7F",
+      "titleColor": "#24475E",
+      "labelFontSize": 11,
+      "padding": 4
+    }
+  },
+  "layer": [
+    {
+      "data": {
+        "values": [
+          {
+            "row": 0,
+            "col": 0,
+            "status": "Critically Endangered",
+            "name": "Christmas Island Shrew",
+            "scientific_name": "Crocidura trichura"
+          },
+          {
+            "row": 0,
+            "col": 1,
+            "status": "Critically Endangered",
+            "name": "Leadbeater's Possum",
+            "scientific_name": "Gymnobelideus leadbeateri"
+          },
+          {
+            "row": 0,
+            "col": 2,
+            "status": "Critically Endangered",
+            "name": "Northern Hairy-nosed Wombat",
+            "scientific_name": "Lasiorhinus krefftii"
+          },
+          {
+            "row": 0,
+            "col": 3,
+            "status": "Critically Endangered",
+            "name": "Southern Bent-wing Bat",
+            "scientific_name": "Miniopterus orianae bassanii"
+          },
+          {
+            "row": 0,
+            "col": 4,
+            "status": "Critically Endangered",
+            "name": "Nabarlek (Victoria River District)",
+            "scientific_name": "Petrogale concinna concinna"
+          },
+          {
+            "row": 0,
+            "col": 5,
+            "status": "Critically Endangered",
+            "name": "Gilbert's Potoroo",
+            "scientific_name": "Potorous gilbertii"
+          },
+          {
+            "row": 0,
+            "col": 6,
+            "status": "Critically Endangered",
+            "name": "Western Ringtail Possum",
+            "scientific_name": "Pseudocheirus occidentalis"
+          },
+          {
+            "row": 0,
+            "col": 7,
+            "status": "Critically Endangered",
+            "name": "Christmas Island Flying-fox",
+            "scientific_name": "Pteropus natalis"
+          },
+          {
+            "row": 0,
+            "col": 8,
+            "status": "Critically Endangered",
+            "name": "Central Rock-rat",
+            "scientific_name": "Zyzomys pedunculatus"
+          },
+          {
+            "row": 0,
+            "col": 9,
+            "status": "Endangered",
+            "name": "Silver-headed Antechinus",
+            "scientific_name": "Antechinus argentus"
+          },
+          {
+            "row": 0,
+            "col": 10,
+            "status": "Endangered",
+            "name": "Black-tailed Antechinus",
+            "scientific_name": "Antechinus arktos"
+          },
+          {
+            "row": 0,
+            "col": 11,
+            "status": "Endangered",
+            "name": "Subantarctic Fur-seal",
+            "scientific_name": "Arctocephalus tropicalis"
+          },
+          {
+            "row": 0,
+            "col": 12,
+            "status": "Endangered",
+            "name": "Blue Whale",
+            "scientific_name": "Balaenoptera musculus"
+          },
+          {
+            "row": 0,
+            "col": 13,
+            "status": "Endangered",
+            "name": "Woylie",
+            "scientific_name": "Bettongia penicillata ogilbyi"
+          },
+          {
+            "row": 0,
+            "col": 14,
+            "status": "Endangered",
+            "name": "Northern Bettong",
+            "scientific_name": "Bettongia tropica"
+          },
+          {
+            "row": 0,
+            "col": 15,
+            "status": "Endangered",
+            "name": "Mountain Pygmy-possum",
+            "scientific_name": "Burramys parvus"
+          },
+          {
+            "row": 1,
+            "col": 0,
+            "status": "Endangered",
+            "name": "Large-eared Pied Bat",
+            "scientific_name": "Chalinolobus dwyeri"
+          },
+          {
+            "row": 1,
+            "col": 1,
+            "status": "Endangered",
+            "name": "Kowari",
+            "scientific_name": "Dasyuroides byrnei"
+          },
+          {
+            "row": 1,
+            "col": 2,
+            "status": "Endangered",
+            "name": "Northern Quoll",
+            "scientific_name": "Dasyurus hallucatus"
+          },
+          {
+            "row": 1,
+            "col": 3,
+            "status": "Endangered",
+            "name": "Spotted-tailed Quoll (North Queensland)",
+            "scientific_name": "Dasyurus maculatus gracilis"
+          },
+          {
+            "row": 1,
+            "col": 4,
+            "status": "Endangered",
+            "name": "Spotted-tail Quoll",
+            "scientific_name": "Dasyurus maculatus maculatus (SE mainland population)"
+          },
+          {
+            "row": 1,
+            "col": 5,
+            "status": "Endangered",
+            "name": "Eastern Quoll",
+            "scientific_name": "Dasyurus viverrinus"
+          },
+          {
+            "row": 1,
+            "col": 6,
+            "status": "Endangered",
+            "name": "Southern Right Whale",
+            "scientific_name": "Eubalaena australis"
+          },
+          {
+            "row": 1,
+            "col": 7,
+            "status": "Endangered",
+            "name": "Lemuroid Ringtail Possum",
+            "scientific_name": "Hemibelideus lemuroides"
+          },
+          {
+            "row": 1,
+            "col": 8,
+            "status": "Endangered",
+            "name": "Arnhem Leaf-nosed Bat",
+            "scientific_name": "Hipposideros inornatus"
+          },
+          {
+            "row": 1,
+            "col": 9,
+            "status": "Endangered",
+            "name": "Southern Brown Bandicoot (eastern)",
+            "scientific_name": "Isoodon obesulus obesulus"
+          },
+          {
+            "row": 1,
+            "col": 10,
+            "status": "Endangered",
+            "name": "Mala",
+            "scientific_name": "Lagorchestes hirsutus Central Australian subspecies"
+          },
+          {
+            "row": 1,
+            "col": 11,
+            "status": "Endangered",
+            "name": "Broad-toothed Rat (mainland)",
+            "scientific_name": "Mastacomys fuscus mordicus"
+          },
+          {
+            "row": 1,
+            "col": 12,
+            "status": "Endangered",
+            "name": "Black-footed Tree-rat (Kimberley and mainland Northern Territory)",
+            "scientific_name": "Mesembriomys gouldii gouldii"
+          },
+          {
+            "row": 1,
+            "col": 13,
+            "status": "Endangered",
+            "name": "Numbat",
+            "scientific_name": "Myrmecobius fasciatus"
+          },
+          {
+            "row": 1,
+            "col": 14,
+            "status": "Endangered",
+            "name": "Australian Sea-lion",
+            "scientific_name": "Neophoca cinerea"
+          },
+          {
+            "row": 1,
+            "col": 15,
+            "status": "Endangered",
+            "name": "Northern Hopping-mouse",
+            "scientific_name": "Notomys aquilo"
+          },
+          {
+            "row": 2,
+            "col": 0,
+            "status": "Endangered",
+            "name": "Bridled Nail-tail Wallaby",
+            "scientific_name": "Onychogalea fraenata"
+          },
+          {
+            "row": 2,
+            "col": 1,
+            "status": "Endangered",
+            "name": "Dibbler",
+            "scientific_name": "Parantechinus apicalis"
+          },
+          {
+            "row": 2,
+            "col": 2,
+            "status": "Endangered",
+            "name": "Shark Bay Bandicoot",
+            "scientific_name": "Perameles bougainville"
+          },
+          {
+            "row": 2,
+            "col": 3,
+            "status": "Endangered",
+            "name": "Eastern Barred Bandicoot (Mainland)",
+            "scientific_name": "Perameles gunnii Victorian subspecies"
+          },
+          {
+            "row": 2,
+            "col": 4,
+            "status": "Endangered",
+            "name": "Greater Glider (southern and central)",
+            "scientific_name": "Petauroides volans"
+          },
+          {
+            "row": 2,
+            "col": 5,
+            "status": "Endangered",
+            "name": "Yellow-bellied Glider (Wet Tropics)",
+            "scientific_name": "Petaurus australis Wet Tropics subspecies"
+          },
+          {
+            "row": 2,
+            "col": 6,
+            "status": "Endangered",
+            "name": "Mahogany Glider",
+            "scientific_name": "Petaurus gracilis"
+          },
+          {
+            "row": 2,
+            "col": 7,
+            "status": "Endangered",
+            "name": "Cape York Rock-wallaby",
+            "scientific_name": "Petrogale coenensis"
+          },
+          {
+            "row": 2,
+            "col": 8,
+            "status": "Endangered",
+            "name": "Nabarlek (Top End)",
+            "scientific_name": "Petrogale concinna canescens"
+          },
+          {
+            "row": 2,
+            "col": 9,
+            "status": "Endangered",
+            "name": "Nabarlek (Kimberley)",
+            "scientific_name": "Petrogale concinna monastria"
+          },
+          {
+            "row": 2,
+            "col": 10,
+            "status": "Endangered",
+            "name": "Wiliji",
+            "scientific_name": "Petrogale lateralis kimberleyensis"
+          },
+          {
+            "row": 2,
+            "col": 11,
+            "status": "Endangered",
+            "name": "Black-flanked Rock-wallaby",
+            "scientific_name": "Petrogale lateralis lateralis"
+          },
+          {
+            "row": 2,
+            "col": 12,
+            "status": "Endangered",
+            "name": "Proserpine Rock-wallaby",
+            "scientific_name": "Petrogale persephone"
+          },
+          {
+            "row": 2,
+            "col": 13,
+            "status": "Endangered",
+            "name": "Koala (combined populations of Queensland",
+            "scientific_name": "Phascolarctos cinereus (combined populations of Qld, NSW and the ACT)"
+          },
+          {
+            "row": 2,
+            "col": 14,
+            "status": "Endangered",
+            "name": "Long-footed Potoroo",
+            "scientific_name": "Potorous longipes"
+          },
+          {
+            "row": 2,
+            "col": 15,
+            "status": "Endangered",
+            "name": "Smoky Mouse",
+            "scientific_name": "Pseudomys fumeus"
+          },
+          {
+            "row": 3,
+            "col": 0,
+            "status": "Endangered",
+            "name": "Hastings River Mouse",
+            "scientific_name": "Pseudomys oralis"
+          },
+          {
+            "row": 3,
+            "col": 1,
+            "status": "Endangered",
+            "name": "Heath Mouse",
+            "scientific_name": "Pseudomys shortridgei"
+          },
+          {
+            "row": 3,
+            "col": 2,
+            "status": "Endangered",
+            "name": "Spectacled Flying-fox",
+            "scientific_name": "Pteropus conspicillatus"
+          },
+          {
+            "row": 3,
+            "col": 3,
+            "status": "Endangered",
+            "name": "Tasmanian Devil",
+            "scientific_name": "Sarcophilus harrisii"
+          },
+          {
+            "row": 3,
+            "col": 4,
+            "status": "Endangered",
+            "name": "Kangaroo Island Dunnart",
+            "scientific_name": "Sminthopsis fuliginosa aitkeni"
+          },
+          {
+            "row": 3,
+            "col": 5,
+            "status": "Endangered",
+            "name": "Sandhill Dunnart",
+            "scientific_name": "Sminthopsis psammophila"
+          },
+          {
+            "row": 3,
+            "col": 6,
+            "status": "Endangered",
+            "name": "Kangaroo Island Echidna",
+            "scientific_name": "Tachyglossus aculeatus multiaculeatus"
+          },
+          {
+            "row": 3,
+            "col": 7,
+            "status": "Endangered",
+            "name": "Carpentarian Rock-rat",
+            "scientific_name": "Zyzomys palatalis"
+          },
+          {
+            "row": 3,
+            "col": 8,
+            "status": "Vulnerable",
+            "name": "Fawn Antechinus",
+            "scientific_name": "Antechinus bellus"
+          },
+          {
+            "row": 3,
+            "col": 9,
+            "status": "Vulnerable",
+            "name": "Swamp Antechinus (mainland)",
+            "scientific_name": "Antechinus minimus maritimus"
+          },
+          {
+            "row": 3,
+            "col": 10,
+            "status": "Vulnerable",
+            "name": "Sei Whale",
+            "scientific_name": "Balaenoptera borealis"
+          },
+          {
+            "row": 3,
+            "col": 11,
+            "status": "Vulnerable",
+            "name": "Fin Whale",
+            "scientific_name": "Balaenoptera physalus"
+          },
+          {
+            "row": 3,
+            "col": 12,
+            "status": "Vulnerable",
+            "name": "Boodie",
+            "scientific_name": "Bettongia lesueur Barrow and Boodie Islands subspecies"
+          },
+          {
+            "row": 3,
+            "col": 13,
+            "status": "Vulnerable",
+            "name": "Burrowing Bettong (Shark Bay)",
+            "scientific_name": "Bettongia lesueur lesueur"
+          },
+          {
+            "row": 3,
+            "col": 14,
+            "status": "Vulnerable",
+            "name": "Brush-tailed Rabbit-rat",
+            "scientific_name": "Conilurus penicillatus"
+          },
+          {
+            "row": 3,
+            "col": 15,
+            "status": "Vulnerable",
+            "name": "Chuditch",
+            "scientific_name": "Dasyurus geoffroii"
+          },
+          {
+            "row": 4,
+            "col": 0,
+            "status": "Vulnerable",
+            "name": "Spotted-tail Quoll",
+            "scientific_name": "Dasyurus maculatus maculatus (Tasmanian population)"
+          },
+          {
+            "row": 4,
+            "col": 1,
+            "status": "Vulnerable",
+            "name": "Semon's Leaf-nosed Bat",
+            "scientific_name": "Hipposideros semoni"
+          },
+          {
+            "row": 4,
+            "col": 2,
+            "status": "Vulnerable",
+            "name": "Golden Bandicoot (mainland)",
+            "scientific_name": "Isoodon auratus auratus"
+          },
+          {
+            "row": 4,
+            "col": 3,
+            "status": "Vulnerable",
+            "name": "Golden Bandicoot (Barrow Island)",
+            "scientific_name": "Isoodon auratus barrowensis"
+          },
+          {
+            "row": 4,
+            "col": 4,
+            "status": "Vulnerable",
+            "name": "Southern Brown Bandicoot (Nuyts Archipelago)",
+            "scientific_name": "Isoodon obesulus nauticus"
+          },
+          {
+            "row": 4,
+            "col": 5,
+            "status": "Vulnerable",
+            "name": "Spectacled Hare-wallaby (Barrow Island)",
+            "scientific_name": "Lagorchestes conspicillatus conspicillatus"
+          },
+          {
+            "row": 4,
+            "col": 6,
+            "status": "Vulnerable",
+            "name": "Rufous Hare-wallaby (Bernier Island)",
+            "scientific_name": "Lagorchestes hirsutus bernieri"
+          },
+          {
+            "row": 4,
+            "col": 7,
+            "status": "Vulnerable",
+            "name": "Rufous Hare-wallaby (Dorre Island)",
+            "scientific_name": "Lagorchestes hirsutus dorreae"
+          },
+          {
+            "row": 4,
+            "col": 8,
+            "status": "Vulnerable",
+            "name": "Banded Hare-wallaby",
+            "scientific_name": "Lagostrophus fasciatus fasciatus"
+          },
+          {
+            "row": 4,
+            "col": 9,
+            "status": "Vulnerable",
+            "name": "Wopilkara",
+            "scientific_name": "Leporillus conditor"
+          },
+          {
+            "row": 4,
+            "col": 10,
+            "status": "Vulnerable",
+            "name": "Ghost Bat",
+            "scientific_name": "Macroderma gigas"
+          },
+          {
+            "row": 4,
+            "col": 11,
+            "status": "Vulnerable",
+            "name": "Greater Bilby",
+            "scientific_name": "Macrotis lagotis"
+          },
+          {
+            "row": 4,
+            "col": 12,
+            "status": "Vulnerable",
+            "name": "Black-footed Tree-rat (Melville Island)",
+            "scientific_name": "Mesembriomys gouldii melvillensis"
+          },
+          {
+            "row": 4,
+            "col": 13,
+            "status": "Vulnerable",
+            "name": "Black-footed Tree-rat (north Queensland)",
+            "scientific_name": "Mesembriomys gouldii rattoides"
+          },
+          {
+            "row": 4,
+            "col": 14,
+            "status": "Vulnerable",
+            "name": "Southern Elephant Seal",
+            "scientific_name": "Mirounga leonina"
+          },
+          {
+            "row": 4,
+            "col": 15,
+            "status": "Vulnerable",
+            "name": "Parma Wallaby",
+            "scientific_name": "Notamacropus parma"
+          },
+          {
+            "row": 5,
+            "col": 0,
+            "status": "Vulnerable",
+            "name": "Dusky Hopping-mouse",
+            "scientific_name": "Notomys fuscus"
+          },
+          {
+            "row": 5,
+            "col": 1,
+            "status": "Vulnerable",
+            "name": "Corben's Long-eared Bat",
+            "scientific_name": "Nyctophilus corbeni"
+          },
+          {
+            "row": 5,
+            "col": 2,
+            "status": "Vulnerable",
+            "name": "Australian Snubfin  Dolphin",
+            "scientific_name": "Orcaella heinsohni"
+          },
+          {
+            "row": 5,
+            "col": 3,
+            "status": "Vulnerable",
+            "name": "Barrow Island Wallaroo",
+            "scientific_name": "Osphranter robustus isabellinus"
+          },
+          {
+            "row": 5,
+            "col": 4,
+            "status": "Vulnerable",
+            "name": "Eastern Barred Bandicoot (Tasmania)",
+            "scientific_name": "Perameles gunnii gunnii"
+          },
+          {
+            "row": 5,
+            "col": 5,
+            "status": "Vulnerable",
+            "name": "Greater Glider (northern)",
+            "scientific_name": "Petauroides minor"
+          },
+          {
+            "row": 5,
+            "col": 6,
+            "status": "Vulnerable",
+            "name": "Yellow-bellied Glider (south-eastern)",
+            "scientific_name": "Petaurus australis australis"
+          },
+          {
+            "row": 5,
+            "col": 7,
+            "status": "Vulnerable",
+            "name": "Warru",
+            "scientific_name": "Petrogale lateralis centralis"
+          },
+          {
+            "row": 5,
+            "col": 8,
+            "status": "Vulnerable",
+            "name": "Recherche Rock-wallaby",
+            "scientific_name": "Petrogale lateralis hacketti"
+          },
+          {
+            "row": 5,
+            "col": 9,
+            "status": "Vulnerable",
+            "name": "Brush-tailed Rock-wallaby",
+            "scientific_name": "Petrogale penicillata"
+          },
+          {
+            "row": 5,
+            "col": 10,
+            "status": "Vulnerable",
+            "name": "Mount Claro Rock Wallaby",
+            "scientific_name": "Petrogale sharmani"
+          },
+          {
+            "row": 5,
+            "col": 11,
+            "status": "Vulnerable",
+            "name": "Yellow-footed Rock-wallaby (central-western Queensland)",
+            "scientific_name": "Petrogale xanthopus celeris"
+          },
+          {
+            "row": 5,
+            "col": 12,
+            "status": "Vulnerable",
+            "name": "Yellow-footed Rock-wallaby (SA and NSW)",
+            "scientific_name": "Petrogale xanthopus xanthopus"
+          },
+          {
+            "row": 5,
+            "col": 13,
+            "status": "Vulnerable",
+            "name": "Red-tailed Phascogale",
+            "scientific_name": "Phascogale calura"
+          },
+          {
+            "row": 5,
+            "col": 14,
+            "status": "Vulnerable",
+            "name": "Northern Brush-tailed Phascogale",
+            "scientific_name": "Phascogale pirata"
+          },
+          {
+            "row": 5,
+            "col": 15,
+            "status": "Vulnerable",
+            "name": "Kimberley brush-tailed phascogale",
+            "scientific_name": "Phascogale tapoatafa kimberleyensis"
+          },
+          {
+            "row": 6,
+            "col": 0,
+            "status": "Vulnerable",
+            "name": "Long-nosed Potoroo (northern)",
+            "scientific_name": "Potorous tridactylus tridactylus"
+          },
+          {
+            "row": 6,
+            "col": 1,
+            "status": "Vulnerable",
+            "name": "Long-nosed Potoroo (southern mainland)",
+            "scientific_name": "Potorous tridactylus trisulcatus"
+          },
+          {
+            "row": 6,
+            "col": 2,
+            "status": "Vulnerable",
+            "name": "Plains Rat",
+            "scientific_name": "Pseudomys australis"
+          },
+          {
+            "row": 6,
+            "col": 3,
+            "status": "Vulnerable",
+            "name": "Shark Bay Mouse",
+            "scientific_name": "Pseudomys fieldi"
+          },
+          {
+            "row": 6,
+            "col": 4,
+            "status": "Vulnerable",
+            "name": "Pookila",
+            "scientific_name": "Pseudomys novaehollandiae"
+          },
+          {
+            "row": 6,
+            "col": 5,
+            "status": "Vulnerable",
+            "name": "Pilliga Mouse",
+            "scientific_name": "Pseudomys pilligaensis"
+          },
+          {
+            "row": 6,
+            "col": 6,
+            "status": "Vulnerable",
+            "name": "Grey-headed Flying-fox",
+            "scientific_name": "Pteropus poliocephalus"
+          },
+          {
+            "row": 6,
+            "col": 7,
+            "status": "Vulnerable",
+            "name": "Large-eared Horseshoe Bat",
+            "scientific_name": "Rhinolophus robertsi"
+          },
+          {
+            "row": 6,
+            "col": 8,
+            "status": "Vulnerable",
+            "name": "Pilbara Leaf-nosed Bat",
+            "scientific_name": "Rhinonicteris aurantia (Pilbara form)"
+          },
+          {
+            "row": 6,
+            "col": 9,
+            "status": "Vulnerable",
+            "name": "Bare-rumped Sheath-tailed Bat",
+            "scientific_name": "Saccolaimus saccolaimus nudicluniatus"
+          },
+          {
+            "row": 6,
+            "col": 10,
+            "status": "Vulnerable",
+            "name": "Quokka",
+            "scientific_name": "Setonix brachyurus"
+          },
+          {
+            "row": 6,
+            "col": 11,
+            "status": "Vulnerable",
+            "name": "Butler's Dunnart",
+            "scientific_name": "Sminthopsis butleri"
+          },
+          {
+            "row": 6,
+            "col": 12,
+            "status": "Vulnerable",
+            "name": "Julia Creek Dunnart",
+            "scientific_name": "Sminthopsis douglasi"
+          },
+          {
+            "row": 6,
+            "col": 13,
+            "status": "Vulnerable",
+            "name": "Australian Humpback Dolphin",
+            "scientific_name": "Sousa sahulensis"
+          },
+          {
+            "row": 6,
+            "col": 14,
+            "status": "Vulnerable",
+            "name": "Northern Brushtail Possum",
+            "scientific_name": "Trichosurus vulpecula arnhemensis"
+          },
+          {
+            "row": 6,
+            "col": 15,
+            "status": "Vulnerable",
+            "name": "Water Mouse",
+            "scientific_name": "Xeromys myoides"
+          },
+          {
+            "row": 7,
+            "col": 0,
+            "status": "Vulnerable",
+            "name": "Arnhem Rock-rat",
+            "scientific_name": "Zyzomys maini"
+          },
+          {
+            "row": 7,
+            "col": 1,
+            "status": "Extinct",
+            "name": "Desert Bettong",
+            "scientific_name": "Bettongia anhydra"
+          },
+          {
+            "row": 7,
+            "col": 2,
+            "status": "Extinct",
+            "name": "Eastern Bettong (mainland)",
+            "scientific_name": "Bettongia gaimardi gaimardi"
+          },
+          {
+            "row": 7,
+            "col": 3,
+            "status": "Extinct",
+            "name": "Boodie (inland)",
+            "scientific_name": "Bettongia lesueur graii"
+          },
+          {
+            "row": 7,
+            "col": 4,
+            "status": "Extinct",
+            "name": "Brush-tailed Bettong (central and south-east)",
+            "scientific_name": "Bettongia penicillata penicillata"
+          },
+          {
+            "row": 7,
+            "col": 5,
+            "status": "Extinct",
+            "name": "Nullarbor Dwarf Bettong",
+            "scientific_name": "Bettongia pusilla"
+          },
+          {
+            "row": 7,
+            "col": 6,
+            "status": "Extinct",
+            "name": "Desert Rat-kangaroo",
+            "scientific_name": "Caloprymnus campestris"
+          },
+          {
+            "row": 7,
+            "col": 7,
+            "status": "Extinct",
+            "name": "Pig-footed Bandicoot",
+            "scientific_name": "Chaeropus ecaudatus"
+          },
+          {
+            "row": 7,
+            "col": 8,
+            "status": "Extinct",
+            "name": "Yirratji",
+            "scientific_name": "Chaeropus yirratji"
+          },
+          {
+            "row": 7,
+            "col": 9,
+            "status": "Extinct",
+            "name": "White-footed Rabbit-rat",
+            "scientific_name": "Conilurus albipes"
+          },
+          {
+            "row": 7,
+            "col": 10,
+            "status": "Extinct",
+            "name": "Capricorn Rabbit-rat",
+            "scientific_name": "Conilurus capricornensis"
+          },
+          {
+            "row": 7,
+            "col": 11,
+            "status": "Extinct",
+            "name": "Kuluwarri",
+            "scientific_name": "Lagorchestes asomatus"
+          },
+          {
+            "row": 7,
+            "col": 12,
+            "status": "Extinct",
+            "name": "Rufous Hare-wallaby (south-western)",
+            "scientific_name": "Lagorchestes hirsutus hirsutus"
+          },
+          {
+            "row": 7,
+            "col": 13,
+            "status": "Extinct",
+            "name": "Eastern Hare-wallaby",
+            "scientific_name": "Lagorchestes leporides"
+          },
+          {
+            "row": 7,
+            "col": 14,
+            "status": "Extinct",
+            "name": "Banded Hare-wallaby (mainland)",
+            "scientific_name": "Lagostrophus fasciatus albipilis"
+          },
+          {
+            "row": 7,
+            "col": 15,
+            "status": "Extinct",
+            "name": "Lesser Stick-nest Rat",
+            "scientific_name": "Leporillus apicalis"
+          },
+          {
+            "row": 8,
+            "col": 0,
+            "status": "Extinct",
+            "name": "Yallara",
+            "scientific_name": "Macrotis leucura"
+          },
+          {
+            "row": 8,
+            "col": 1,
+            "status": "Extinct",
+            "name": "Bramble Cay Melomys",
+            "scientific_name": "Melomys rubicola"
+          },
+          {
+            "row": 8,
+            "col": 2,
+            "status": "Extinct",
+            "name": "Toolache Wallaby",
+            "scientific_name": "Notamacropus greyi"
+          },
+          {
+            "row": 8,
+            "col": 3,
+            "status": "Extinct",
+            "name": "Short-tailed Hopping-mouse",
+            "scientific_name": "Notomys amplus"
+          },
+          {
+            "row": 8,
+            "col": 4,
+            "status": "Extinct",
+            "name": "Long-tailed Hopping-mouse",
+            "scientific_name": "Notomys longicaudatus"
+          },
+          {
+            "row": 8,
+            "col": 5,
+            "status": "Extinct",
+            "name": "Large-eared Hopping-mouse",
+            "scientific_name": "Notomys macrotis"
+          },
+          {
+            "row": 8,
+            "col": 6,
+            "status": "Extinct",
+            "name": "Darling Downs Hopping-mouse",
+            "scientific_name": "Notomys mordax"
+          },
+          {
+            "row": 8,
+            "col": 7,
+            "status": "Extinct",
+            "name": "Broad-cheeked Hopping-mouse",
+            "scientific_name": "Notomys robustus"
+          },
+          {
+            "row": 8,
+            "col": 8,
+            "status": "Extinct",
+            "name": "Lord Howe Long-eared Bat",
+            "scientific_name": "Nyctophilus howensis"
+          },
+          {
+            "row": 8,
+            "col": 9,
+            "status": "Extinct",
+            "name": "Crescent Nailtail Wallaby",
+            "scientific_name": "Onychogalea lunata"
+          },
+          {
+            "row": 8,
+            "col": 10,
+            "status": "Extinct",
+            "name": "Western Barred Bandicoot (eastern)",
+            "scientific_name": "Perameles bougainville fasciata"
+          },
+          {
+            "row": 8,
+            "col": 11,
+            "status": "Extinct",
+            "name": "Desert Bandicoot",
+            "scientific_name": "Perameles eremiana"
+          },
+          {
+            "row": 8,
+            "col": 12,
+            "status": "Extinct",
+            "name": "Marl",
+            "scientific_name": "Perameles myosurus"
+          },
+          {
+            "row": 8,
+            "col": 13,
+            "status": "Extinct",
+            "name": "South-eastern Striped Bandicoot",
+            "scientific_name": "Perameles notina"
+          },
+          {
+            "row": 8,
+            "col": 14,
+            "status": "Extinct",
+            "name": "Butterfly Bandicoot",
+            "scientific_name": "Perameles papillon"
+          },
+          {
+            "row": 8,
+            "col": 15,
+            "status": "Extinct",
+            "name": "Christmas Island Pipistrelle",
+            "scientific_name": "Pipistrellus murrayi"
+          },
+          {
+            "row": 9,
+            "col": 0,
+            "status": "Extinct",
+            "name": "Broad-faced Potoroo",
+            "scientific_name": "Potorous platyops"
+          },
+          {
+            "row": 9,
+            "col": 1,
+            "status": "Extinct",
+            "name": "Long-eared Mouse",
+            "scientific_name": "Pseudomys auritus"
+          },
+          {
+            "row": 9,
+            "col": 2,
+            "status": "Extinct",
+            "name": "Blue-grey Mouse",
+            "scientific_name": "Pseudomys glaucus"
+          },
+          {
+            "row": 9,
+            "col": 3,
+            "status": "Extinct",
+            "name": "Gould's Mouse",
+            "scientific_name": "Pseudomys gouldii"
+          },
+          {
+            "row": 9,
+            "col": 4,
+            "status": "Extinct",
+            "name": "Percy Island Flying-fox",
+            "scientific_name": "Pteropus brunneus"
+          },
+          {
+            "row": 9,
+            "col": 5,
+            "status": "Extinct",
+            "name": "Maclear's Rat",
+            "scientific_name": "Rattus macleari"
+          },
+          {
+            "row": 9,
+            "col": 6,
+            "status": "Extinct",
+            "name": "Bulldog Rat",
+            "scientific_name": "Rattus nativitatis"
+          },
+          {
+            "row": 9,
+            "col": 7,
+            "status": "Extinct",
+            "name": "Thylacine",
+            "scientific_name": "Thylacinus cynocephalus"
+          }
+        ]
+      },
+      "mark": {
+        "type": "rect",
+        "stroke": "white",
+        "strokeWidth": 1.3,
+        "cornerRadius": 1
+      },
+      "encoding": {
+        "x": {
+          "field": "col",
+          "type": "ordinal",
+          "axis": null,
+          "sort": "ascending"
+        },
+        "y": {
+          "field": "row",
+          "type": "ordinal",
+          "axis": null,
+          "sort": "ascending"
+        },
+        "color": {
+          "field": "status",
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "Critically Endangered",
+              "Endangered",
+              "Vulnerable",
+              "Extinct"
+            ],
+            "range": [
+              "#CF6F42",
+              "#E8A077",
+              "#6C9EB7",
+              "#AFCCD9"
+            ]
+          },
+          "legend": null
+        },
+        "tooltip": [
+          {
+            "field": "name",
+            "type": "nominal",
+            "title": "Mammal"
+          },
+          {
+            "field": "scientific_name",
+            "type": "nominal",
+            "title": "Taxon"
+          },
+          {
+            "field": "status",
+            "type": "nominal",
+            "title": "EPBC status"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Native Australian mammals and conservation patterns from national listings" name="description"/>
+<title>
+   Australia's Native Mammals
+  </title>
+<link href="style.css" rel="stylesheet"/>
+<script src="https://cdn.jsdelivr.net/npm/vega@5">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/vega-lite@5">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/vega-embed@6">
+</script>
+</head>
+<body>
+<header class="editorial-header">
+<div class="header-content">
+<div class="heading-copy">
+<h1>
+      Australia's Native Mammals
+     </h1>
+<p class="hero-subtitle">
+      Diversity, distribution and conservation in Australia
+     </p>
+<p class="hero-intro">
+      Australia is home to a remarkable variety of native mammals, from marsupials and monotremes to bats and rodents. Many occupy specialised habitats, and some face serious conservation challenges. This visualisation compares nationally listed mammals to explore how conservation status varies between mammal groups and across Australia.
+     </p>
+</div>
+<img alt="Illustration of an Australian kangaroo" class="header-image" src="images/kangaroo_illustration.png"/>
+</div>
+</header>
+<main>
+<section>
+<h2>
+     Conservation status
+    </h2>
+<div class="chart-grid">
+<article class="chart-card">
+<h3>
+       How are threatened mammal listings classified?
+      </h3>
+<div class="vis" id="vis01">
+</div>
+</article>
+<article class="chart-card">
+<h3>
+       One square for every listed entry
+      </h3>
+<div class="vis" id="vis02">
+</div>
+</article>
+</div>
+<div aria-label="Conservation status colours" class="status-legend">
+<span>
+<i style="background:#CF6F42">
+</i>
+      Critically Endangered
+      <b>
+       9
+      </b>
+</span>
+<span>
+<i style="background:#E8A077">
+</i>
+      Endangered
+      <b>
+       47
+      </b>
+</span>
+<span>
+<i style="background:#6C9EB7">
+</i>
+      Vulnerable
+      <b>
+       57
+      </b>
+</span>
+<span>
+<i style="background:#AFCCD9">
+</i>
+      Extinct
+      <b>
+       39
+      </b>
+</span>
+</div>
+</section>
+<section>
+<h2>
+     Differences between mammal groups
+    </h2>
+<div class="chart-grid">
+<article class="chart-card">
+<h3>
+       Which families have the most listings?
+      </h3>
+<div class="vis" id="vis03">
+</div>
+</article>
+<article class="chart-card">
+<h3>
+       Conservation categories across mammal families
+      </h3>
+<div class="vis" id="vis04">
+</div>
+</article>
+</div>
+</section>
+<section>
+<h2>
+     Mammals across Australia
+    </h2>
+<div class="chart-grid">
+<article class="chart-card">
+<h3>
+       Proportion in more severe conservation categories
+      </h3>
+<div class="vis map-vis" id="map01">
+</div>
+<div class="map-key">
+<span>
+        Lower share · 37.5%
+       </span>
+<span class="map-gradient">
+</span>
+<span>
+        Higher share · 58.3%
+       </span>
+</div>
+</article>
+<article class="chart-card">
+<h3>
+       Listed mammal entries by state or territory
+      </h3>
+<div class="vis map-vis" id="map02">
+</div>
+<div class="map-key">
+<span>
+        Smaller circle = fewer entries
+       </span>
+<span class="size-demo">
+<i>
+</i>
+<i>
+</i>
+<i>
+</i>
+</span>
+<span>
+        Larger circle = more entries
+       </span>
+</div>
+</article>
+</div>
+</section>
+<section>
+<h2>
+     Other conservation patterns
+    </h2>
+<div class="chart-grid">
+<article class="chart-card">
+<h3>
+       Conservation status across states
+      </h3>
+<div class="vis" id="vis05">
+</div>
+</article>
+<article class="chart-card">
+<h3>
+       Severe listings across states
+      </h3>
+<div class="vis" id="vis06">
+</div>
+</article>
+<article class="chart-card">
+<h3>
+       How many states are indicated per listing?
+      </h3>
+<div class="vis" id="vis07">
+</div>
+</article>
+<article class="chart-card">
+<h3>
+       Geographic coverage by conservation category
+      </h3>
+<div class="vis" id="vis08">
+</div>
+</article>
+</div>
+<div class="wide-chart">
+<article class="chart-card">
+<h3>
+       Which listed mammals are associated with the most states?
+      </h3>
+
+<div class="ranking-layout">
+  <div class="ranking-chart"><div class="vis" id="vis09"></div></div>
+  <aside class="ranking-explanation" aria-label="Reading the ranking chart">
+    <h4>Where are they listed?</h4>
+    <p>The Blue Whale and Chuditch each have <strong>seven state or territory indicators</strong> in the federal threatened-species data. Other mammals shown are associated with five or six jurisdictions.</p>
+     
+  </aside>
+</div></article>
+</div>
+</section>
+</main>
+<footer>
+  Chart and map data: <a href="https://data.gov.au/data/dataset/ae652011-f39e-4c6c-91b8-1dc2d2dfee8f" target="_blank" rel="noopener noreferrer">Australian Government threatened-species state lists (August 2026)</a>
+  <span aria-hidden="true">·</span>
+  Species and sighting reference: <a href="https://www.ala.org.au/" target="_blank" rel="noopener noreferrer">Atlas of Living Australia (ALA)</a>
+</footer>
+<script>
+   const charts={
+ vis01:'js/01_status_donut.json', vis02:'js/02_status_waffle.json',
+ vis03:'js/03_family_treemap.json',vis04:'js/04_family_status_heatmap.json',
+ vis05:'js/05_state_mix.json',vis06:'js/06_severity_lollipop.json',
+ vis07:'js/07_geographic_breadth_histogram.json',vis08:'js/08_status_breadth_matrix.json',
+ vis09:'js/09_widest_entries.json',map01:'js/10_choropleth_map.json',map02:'js/11_symbol_map.json'
+};
+for(const [id,filepath] of Object.entries(charts)) {
+ vegaEmbed('#'+id,filepath,{actions:false,renderer:'svg'}).catch(error=>{
+  console.error('Vega chart error:',id,error);
+  document.getElementById(id).textContent='Unable to load chart ('+id+').';
+ });
+}
+  </script>
+</body>
+</html>

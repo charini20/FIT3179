@@ -1,0 +1,320 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 435,
+  "height": 270,
+  "config": {
+    "background": "transparent",
+    "font": "Arial, Helvetica, sans-serif",
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "labelColor": "#506D7F",
+      "titleColor": "#24475E",
+      "labelFontSize": 11,
+      "titleFontSize": 12,
+      "gridColor": "#E8EFF5",
+      "domainColor": "#D6E5EF",
+      "tickColor": "#D6E5EF"
+    },
+    "legend": {
+      "labelColor": "#506D7F",
+      "titleColor": "#24475E",
+      "labelFontSize": 11,
+      "padding": 4
+    }
+  },
+  "layer": [
+    {
+      "data": {
+        "values": [
+          {
+            "family": "Muridae",
+            "count": 33,
+            "x": 0,
+            "x2": 40.13158,
+            "y": 0,
+            "y2": 32.45902,
+            "xm": 20.06579,
+            "ym": 16.22951
+          },
+          {
+            "family": "Macropodidae",
+            "count": 28,
+            "x": 0,
+            "x2": 40.13158,
+            "y": 32.45902,
+            "y2": 60.0,
+            "xm": 20.06579,
+            "ym": 46.22951
+          },
+          {
+            "family": "Dasyuridae",
+            "count": 20,
+            "x": 40.13158,
+            "x2": 74.34211,
+            "y": 0,
+            "y2": 23.07692,
+            "xm": 57.23684,
+            "ym": 11.53846
+          },
+          {
+            "family": "Potoroidae",
+            "count": 15,
+            "x": 74.34211,
+            "x2": 100.0,
+            "y": 0,
+            "y2": 23.07692,
+            "xm": 87.17105,
+            "ym": 11.53846
+          },
+          {
+            "family": "Peramelidae",
+            "count": 14,
+            "x": 40.13158,
+            "x2": 59.375,
+            "y": 23.07692,
+            "y2": 51.79487,
+            "xm": 49.75329,
+            "ym": 37.4359
+          },
+          {
+            "family": "Vespertilionidae",
+            "count": 4,
+            "x": 40.13158,
+            "x2": 59.375,
+            "y": 51.79487,
+            "y2": 60.0,
+            "xm": 49.75329,
+            "ym": 55.89744
+          },
+          {
+            "family": "Petauridae",
+            "count": 4,
+            "x": 59.375,
+            "x2": 72.20395,
+            "y": 23.07692,
+            "y2": 35.38462,
+            "xm": 65.78947,
+            "ym": 29.23077
+          },
+          {
+            "family": "Pseudocheiridae",
+            "count": 4,
+            "x": 59.375,
+            "x2": 72.20395,
+            "y": 35.38462,
+            "y2": 47.69231,
+            "xm": 65.78947,
+            "ym": 41.53846
+          },
+          {
+            "family": "Pteropodidae",
+            "count": 4,
+            "x": 59.375,
+            "x2": 72.20395,
+            "y": 47.69231,
+            "y2": 60.0,
+            "xm": 65.78947,
+            "ym": 53.84615
+          },
+          {
+            "family": "Other families",
+            "count": 26,
+            "x": 72.20395,
+            "x2": 100.0,
+            "y": 23.07692,
+            "y2": 60.0,
+            "xm": 86.10197,
+            "ym": 41.53846
+          }
+        ]
+      },
+      "mark": {
+        "type": "rect",
+        "stroke": "white",
+        "strokeWidth": 2
+      },
+      "encoding": {
+        "x": {
+          "field": "x",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              100
+            ]
+          },
+          "axis": null
+        },
+        "x2": {
+          "field": "x2"
+        },
+        "y": {
+          "field": "y",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              60
+            ],
+            "reverse": true
+          },
+          "axis": null
+        },
+        "y2": {
+          "field": "y2"
+        },
+        "color": {
+          "field": "family",
+          "type": "nominal",
+          "legend": null,
+          "scale": {
+            "domain": [
+              "Muridae",
+              "Macropodidae",
+              "Dasyuridae",
+              "Potoroidae",
+              "Peramelidae",
+              "Vespertilionidae",
+              "Petauridae",
+              "Pseudocheiridae",
+              "Pteropodidae",
+              "Other families"
+            ],
+            "range": [
+              "#4686AA",
+              "#8AB3CA",
+              "#B6CFDD",
+              "#E6B28D",
+              "#F0CFB7",
+              "#D5E5EE",
+              "#90B8D0",
+              "#F5DCCA",
+              "#C8D9E5",
+              "#E7EEF4"
+            ]
+          }
+        },
+        "tooltip": [
+          {
+            "field": "family",
+            "type": "nominal"
+          },
+          {
+            "field": "count",
+            "type": "quantitative"
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "family": "Muridae",
+            "count": 33,
+            "x": 0,
+            "x2": 40.13158,
+            "y": 0,
+            "y2": 32.45902,
+            "xm": 20.06579,
+            "ym": 16.22951,
+            "label": "Muridae  33"
+          },
+          {
+            "family": "Macropodidae",
+            "count": 28,
+            "x": 0,
+            "x2": 40.13158,
+            "y": 32.45902,
+            "y2": 60.0,
+            "xm": 20.06579,
+            "ym": 46.22951,
+            "label": "Macropodidae  28"
+          },
+          {
+            "family": "Dasyuridae",
+            "count": 20,
+            "x": 40.13158,
+            "x2": 74.34211,
+            "y": 0,
+            "y2": 23.07692,
+            "xm": 57.23684,
+            "ym": 11.53846,
+            "label": "Dasyuridae  20"
+          },
+          {
+            "family": "Potoroidae",
+            "count": 15,
+            "x": 74.34211,
+            "x2": 100.0,
+            "y": 0,
+            "y2": 23.07692,
+            "xm": 87.17105,
+            "ym": 11.53846,
+            "label": "Potoroidae  15"
+          },
+          {
+            "family": "Peramelidae",
+            "count": 14,
+            "x": 40.13158,
+            "x2": 59.375,
+            "y": 23.07692,
+            "y2": 51.79487,
+            "xm": 49.75329,
+            "ym": 37.4359,
+            "label": "Peramelidae  14"
+          },
+          {
+            "family": "Other families",
+            "count": 26,
+            "x": 72.20395,
+            "x2": 100.0,
+            "y": 23.07692,
+            "y2": 60.0,
+            "xm": 86.10197,
+            "ym": 41.53846,
+            "label": "Other families  26"
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "fontSize": 11,
+        "fontWeight": "bold",
+        "color": "#1D4157",
+        "clip": true
+      },
+      "encoding": {
+        "x": {
+          "field": "xm",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              100
+            ]
+          },
+          "axis": null
+        },
+        "y": {
+          "field": "ym",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              60
+            ],
+            "reverse": true
+          },
+          "axis": null
+        },
+        "text": {
+          "field": "label",
+          "type": "nominal"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,230 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 530,
+  "height": 280,
+  "config": {
+    "background": "transparent",
+    "font": "Arial, Helvetica, sans-serif",
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "labelColor": "#506D7F",
+      "titleColor": "#24475E",
+      "labelFontSize": 11,
+      "titleFontSize": 12,
+      "gridColor": "#E8EFF5",
+      "domainColor": "#D6E5EF",
+      "tickColor": "#D6E5EF"
+    },
+    "legend": {
+      "labelColor": "#506D7F",
+      "titleColor": "#24475E",
+      "labelFontSize": 11,
+      "padding": 4
+    }
+  },
+  "data": {
+    "values": [
+      {
+        "rank": 1,
+        "common_name": "Blue Whale",
+        "status": "Endangered",
+        "breadth": 7,
+        "label": "7 states"
+      },
+      {
+        "rank": 2,
+        "common_name": "Chuditch",
+        "status": "Vulnerable",
+        "breadth": 7,
+        "label": "7 states"
+      },
+      {
+        "rank": 3,
+        "common_name": "Fin Whale",
+        "status": "Vulnerable",
+        "breadth": 6,
+        "label": "6 states"
+      },
+      {
+        "rank": 4,
+        "common_name": "Golden Bandicoot (mainland)",
+        "status": "Vulnerable",
+        "breadth": 6,
+        "label": "6 states"
+      },
+      {
+        "rank": 5,
+        "common_name": "Sei Whale",
+        "status": "Vulnerable",
+        "breadth": 6,
+        "label": "6 states"
+      },
+      {
+        "rank": 6,
+        "common_name": "Southern Right Whale",
+        "status": "Endangered",
+        "breadth": 6,
+        "label": "6 states"
+      },
+      {
+        "rank": 7,
+        "common_name": "Eastern Quoll",
+        "status": "Endangered",
+        "breadth": 5,
+        "label": "5 states"
+      },
+      {
+        "rank": 8,
+        "common_name": "Greater Bilby",
+        "status": "Vulnerable",
+        "breadth": 5,
+        "label": "5 states"
+      },
+      {
+        "rank": 9,
+        "common_name": "Grey-headed Flying-fox",
+        "status": "Vulnerable",
+        "breadth": 5,
+        "label": "5 states"
+      }
+    ]
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "bar",
+        "color": "#4686AA",
+        "cornerRadiusEnd": 3
+      },
+      "encoding": {
+        "y": {
+          "field": "common_name",
+          "type": "nominal",
+          "sort": [
+            "Blue Whale",
+            "Chuditch",
+            "Fin Whale",
+            "Golden Bandicoot (mainland)",
+            "Sei Whale",
+            "Southern Right Whale",
+            "Eastern Quoll",
+            "Greater Bilby",
+            "Grey-headed Flying-fox"
+          ],
+          "title": null,
+          "axis": {
+            "labelLimit": 270,
+            "labelFontSize": 12
+          }
+        },
+        "x": {
+          "field": "breadth",
+          "type": "quantitative",
+          "title": "States / territories indicated",
+          "scale": {
+            "domain": [
+              0,
+              8
+            ]
+          },
+          "axis": {
+            "values": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8
+            ],
+            "format": "d",
+            "titleFontSize": 12
+          }
+        },
+        "tooltip": [
+          {
+            "field": "common_name",
+            "type": "nominal",
+            "title": "Mammal taxon"
+          },
+          {
+            "field": "status",
+            "type": "nominal",
+            "title": "Listed status"
+          },
+          {
+            "field": "breadth",
+            "type": "quantitative",
+            "title": "Number of states/territories"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 6,
+        "fontSize": 12,
+        "fontWeight": "bold",
+        "color": "#1D4157"
+      },
+      "encoding": {
+        "y": {
+          "field": "common_name",
+          "type": "nominal",
+          "sort": [
+            "Blue Whale",
+            "Chuditch",
+            "Fin Whale",
+            "Golden Bandicoot (mainland)",
+            "Sei Whale",
+            "Southern Right Whale",
+            "Eastern Quoll",
+            "Greater Bilby",
+            "Grey-headed Flying-fox"
+          ],
+          "title": null,
+          "axis": {
+            "labelLimit": 270,
+            "labelFontSize": 12
+          }
+        },
+        "x": {
+          "field": "breadth",
+          "type": "quantitative",
+          "title": "States / territories indicated",
+          "scale": {
+            "domain": [
+              0,
+              8
+            ]
+          },
+          "axis": {
+            "values": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8
+            ],
+            "format": "d",
+            "titleFontSize": 12
+          }
+        },
+        "text": {
+          "field": "breadth",
+          "type": "quantitative"
+        }
+      }
+    }
+  ]
+}

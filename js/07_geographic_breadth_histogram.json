@@ -1,0 +1,127 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 420,
+  "height": 300,
+  "config": {
+    "background": "transparent",
+    "font": "Arial, Helvetica, sans-serif",
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "labelColor": "#506D7F",
+      "titleColor": "#24475E",
+      "labelFontSize": 11,
+      "titleFontSize": 12,
+      "gridColor": "#E8EFF5",
+      "domainColor": "#D6E5EF",
+      "tickColor": "#D6E5EF"
+    },
+    "legend": {
+      "labelColor": "#506D7F",
+      "titleColor": "#24475E",
+      "labelFontSize": 11,
+      "padding": 4
+    }
+  },
+  "data": {
+    "values": [
+      {
+        "breadth": 0,
+        "count": 5
+      },
+      {
+        "breadth": 1,
+        "count": 61
+      },
+      {
+        "breadth": 2,
+        "count": 29
+      },
+      {
+        "breadth": 3,
+        "count": 18
+      },
+      {
+        "breadth": 4,
+        "count": 21
+      },
+      {
+        "breadth": 5,
+        "count": 10
+      },
+      {
+        "breadth": 6,
+        "count": 6
+      },
+      {
+        "breadth": 7,
+        "count": 2
+      },
+      {
+        "breadth": 8,
+        "count": 0
+      }
+    ]
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "bar",
+        "cornerRadiusEnd": 3,
+        "color": "#4686AA"
+      },
+      "encoding": {
+        "x": {
+          "field": "breadth",
+          "type": "ordinal",
+          "title": "States/territories flagged",
+          "sort": "ascending"
+        },
+        "y": {
+          "field": "count",
+          "type": "quantitative",
+          "title": "Listed mammal entries"
+        },
+        "tooltip": [
+          {
+            "field": "breadth",
+            "type": "quantitative",
+            "title": "Breadth"
+          },
+          {
+            "field": "count",
+            "type": "quantitative",
+            "title": "Count"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "dy": -8,
+        "fontWeight": "bold",
+        "fontSize": 11,
+        "color": "#1D4157"
+      },
+      "encoding": {
+        "x": {
+          "field": "breadth",
+          "type": "ordinal",
+          "title": "States/territories flagged",
+          "sort": "ascending"
+        },
+        "y": {
+          "field": "count",
+          "type": "quantitative",
+          "title": "Listed mammal entries"
+        },
+        "text": {
+          "field": "count",
+          "type": "quantitative"
+        }
+      }
+    }
+  ]
+}

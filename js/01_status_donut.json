@@ -1,0 +1,115 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 420,
+  "height": 260,
+  "data": {
+    "values": [
+      {
+        "status": "Critically Endangered",
+        "count": 9
+      },
+      {
+        "status": "Endangered",
+        "count": 47
+      },
+      {
+        "status": "Vulnerable",
+        "count": 57
+      },
+      {
+        "status": "Extinct",
+        "count": 39
+      }
+    ]
+  },
+  "config": {
+    "background": "transparent",
+    "font": "Arial, Helvetica, sans-serif",
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "labelColor": "#506D7F",
+      "titleColor": "#24475E",
+      "labelFontSize": 11,
+      "titleFontSize": 12,
+      "gridColor": "#E8EFF5",
+      "domainColor": "#D6E5EF",
+      "tickColor": "#D6E5EF"
+    },
+    "legend": {
+      "labelColor": "#506D7F",
+      "titleColor": "#24475E",
+      "labelFontSize": 11,
+      "padding": 4
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "arc",
+        "innerRadius": 72,
+        "outerRadius": 120,
+        "stroke": "#fff",
+        "strokeWidth": 2
+      },
+      "encoding": {
+        "theta": {
+          "field": "count",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "status",
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "Critically Endangered",
+              "Endangered",
+              "Vulnerable",
+              "Extinct"
+            ],
+            "range": [
+              "#CF6F42",
+              "#E8A077",
+              "#6C9EB7",
+              "#AFCCD9"
+            ]
+          },
+          "legend": null
+        },
+        "tooltip": [
+          {
+            "field": "status",
+            "type": "nominal",
+            "title": "Status"
+          },
+          {
+            "field": "count",
+            "type": "quantitative",
+            "title": "Count"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "radius": 100,
+        "fontSize": 16,
+        "fontWeight": "bold",
+        "color": "#1D4157"
+      },
+      "encoding": {
+        "theta": {
+          "field": "count",
+          "type": "quantitative",
+          "stack": true
+        },
+        "text": {
+          "field": "count",
+          "type": "quantitative"
+        }
+      }
+    }
+  ]
+}

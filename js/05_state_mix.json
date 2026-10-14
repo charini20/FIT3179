@@ -1,0 +1,382 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 420,
+  "height": 298,
+  "config": {
+    "background": "transparent",
+    "font": "Arial, Helvetica, sans-serif",
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "labelColor": "#506D7F",
+      "titleColor": "#24475E",
+      "labelFontSize": 11,
+      "titleFontSize": 12,
+      "gridColor": "#E8EFF5",
+      "domainColor": "#D6E5EF",
+      "tickColor": "#D6E5EF"
+    },
+    "legend": {
+      "labelColor": "#506D7F",
+      "titleColor": "#24475E",
+      "labelFontSize": 11,
+      "padding": 4
+    }
+  },
+  "data": {
+    "values": [
+      {
+        "abbr": "ACT",
+        "state": "Australian Capital Territory",
+        "status": "Critically Endangered",
+        "count": 0,
+        "pct": 0.0
+      },
+      {
+        "abbr": "ACT",
+        "state": "Australian Capital Territory",
+        "status": "Endangered",
+        "count": 7,
+        "pct": 58.33
+      },
+      {
+        "abbr": "ACT",
+        "state": "Australian Capital Territory",
+        "status": "Vulnerable",
+        "count": 5,
+        "pct": 41.67
+      },
+      {
+        "abbr": "ACT",
+        "state": "Australian Capital Territory",
+        "status": "Extinct",
+        "count": 0,
+        "pct": 0.0
+      },
+      {
+        "abbr": "NSW",
+        "state": "New South Wales",
+        "status": "Critically Endangered",
+        "count": 2,
+        "pct": 3.51
+      },
+      {
+        "abbr": "NSW",
+        "state": "New South Wales",
+        "status": "Endangered",
+        "count": 19,
+        "pct": 33.33
+      },
+      {
+        "abbr": "NSW",
+        "state": "New South Wales",
+        "status": "Vulnerable",
+        "count": 22,
+        "pct": 38.6
+      },
+      {
+        "abbr": "NSW",
+        "state": "New South Wales",
+        "status": "Extinct",
+        "count": 14,
+        "pct": 24.56
+      },
+      {
+        "abbr": "NT",
+        "state": "Northern Territory",
+        "status": "Critically Endangered",
+        "count": 2,
+        "pct": 4.44
+      },
+      {
+        "abbr": "NT",
+        "state": "Northern Territory",
+        "status": "Endangered",
+        "count": 11,
+        "pct": 24.44
+      },
+      {
+        "abbr": "NT",
+        "state": "Northern Territory",
+        "status": "Vulnerable",
+        "count": 20,
+        "pct": 44.44
+      },
+      {
+        "abbr": "NT",
+        "state": "Northern Territory",
+        "status": "Extinct",
+        "count": 12,
+        "pct": 26.67
+      },
+      {
+        "abbr": "QLD",
+        "state": "Queensland",
+        "status": "Critically Endangered",
+        "count": 1,
+        "pct": 1.56
+      },
+      {
+        "abbr": "QLD",
+        "state": "Queensland",
+        "status": "Endangered",
+        "count": 22,
+        "pct": 34.38
+      },
+      {
+        "abbr": "QLD",
+        "state": "Queensland",
+        "status": "Vulnerable",
+        "count": 26,
+        "pct": 40.62
+      },
+      {
+        "abbr": "QLD",
+        "state": "Queensland",
+        "status": "Extinct",
+        "count": 15,
+        "pct": 23.44
+      },
+      {
+        "abbr": "SA",
+        "state": "South Australia",
+        "status": "Critically Endangered",
+        "count": 1,
+        "pct": 1.64
+      },
+      {
+        "abbr": "SA",
+        "state": "South Australia",
+        "status": "Endangered",
+        "count": 19,
+        "pct": 31.15
+      },
+      {
+        "abbr": "SA",
+        "state": "South Australia",
+        "status": "Vulnerable",
+        "count": 20,
+        "pct": 32.79
+      },
+      {
+        "abbr": "SA",
+        "state": "South Australia",
+        "status": "Extinct",
+        "count": 21,
+        "pct": 34.43
+      },
+      {
+        "abbr": "TAS",
+        "state": "Tasmania",
+        "status": "Critically Endangered",
+        "count": 0,
+        "pct": 0.0
+      },
+      {
+        "abbr": "TAS",
+        "state": "Tasmania",
+        "status": "Endangered",
+        "count": 5,
+        "pct": 41.67
+      },
+      {
+        "abbr": "TAS",
+        "state": "Tasmania",
+        "status": "Vulnerable",
+        "count": 6,
+        "pct": 50.0
+      },
+      {
+        "abbr": "TAS",
+        "state": "Tasmania",
+        "status": "Extinct",
+        "count": 1,
+        "pct": 8.33
+      },
+      {
+        "abbr": "VIC",
+        "state": "Victoria",
+        "status": "Critically Endangered",
+        "count": 2,
+        "pct": 5.26
+      },
+      {
+        "abbr": "VIC",
+        "state": "Victoria",
+        "status": "Endangered",
+        "count": 14,
+        "pct": 36.84
+      },
+      {
+        "abbr": "VIC",
+        "state": "Victoria",
+        "status": "Vulnerable",
+        "count": 12,
+        "pct": 31.58
+      },
+      {
+        "abbr": "VIC",
+        "state": "Victoria",
+        "status": "Extinct",
+        "count": 10,
+        "pct": 26.32
+      },
+      {
+        "abbr": "WA",
+        "state": "Western Australia",
+        "status": "Critically Endangered",
+        "count": 3,
+        "pct": 4.41
+      },
+      {
+        "abbr": "WA",
+        "state": "Western Australia",
+        "status": "Endangered",
+        "count": 15,
+        "pct": 22.06
+      },
+      {
+        "abbr": "WA",
+        "state": "Western Australia",
+        "status": "Vulnerable",
+        "count": 30,
+        "pct": 44.12
+      },
+      {
+        "abbr": "WA",
+        "state": "Western Australia",
+        "status": "Extinct",
+        "count": 20,
+        "pct": 29.41
+      }
+    ]
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "bar"
+      },
+      "encoding": {
+        "y": {
+          "field": "abbr",
+          "type": "nominal",
+          "sort": [
+            "ACT",
+            "NSW",
+            "NT",
+            "QLD",
+            "SA",
+            "TAS",
+            "VIC",
+            "WA"
+          ],
+          "title": null,
+          "axis": {
+            "labelFontSize": 11
+          }
+        },
+        "x": {
+          "field": "count",
+          "type": "quantitative",
+          "stack": "normalize",
+          "axis": {
+            "format": ".0%",
+            "title": "Share of listed entries"
+          }
+        },
+        "color": {
+          "field": "status",
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "Critically Endangered",
+              "Endangered",
+              "Vulnerable",
+              "Extinct"
+            ],
+            "range": [
+              "#CF6F42",
+              "#E8A077",
+              "#6C9EB7",
+              "#AFCCD9"
+            ]
+          },
+          "legend": {
+            "title": "Conservation status",
+            "orient": "bottom",
+            "columns": 2,
+            "labelLimit": 190
+          }
+        },
+        "tooltip": [
+          {
+            "field": "state",
+            "type": "nominal",
+            "title": "State"
+          },
+          {
+            "field": "status",
+            "type": "nominal",
+            "title": "Status"
+          },
+          {
+            "field": "count",
+            "type": "quantitative",
+            "title": "Count"
+          },
+          {
+            "field": "pct",
+            "type": "quantitative",
+            "title": "Pct"
+          }
+        ]
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum.count >= 4"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "fontSize": 10,
+        "fontWeight": "bold",
+        "color": "#1D4157"
+      },
+      "encoding": {
+        "y": {
+          "field": "abbr",
+          "type": "nominal",
+          "sort": [
+            "ACT",
+            "NSW",
+            "NT",
+            "QLD",
+            "SA",
+            "TAS",
+            "VIC",
+            "WA"
+          ],
+          "title": null,
+          "axis": {
+            "labelFontSize": 11
+          }
+        },
+        "x": {
+          "field": "count",
+          "type": "quantitative",
+          "stack": "normalize"
+        },
+        "detail": {
+          "field": "status"
+        },
+        "text": {
+          "field": "count",
+          "type": "quantitative"
+        }
+      }
+    }
+  ]
+}

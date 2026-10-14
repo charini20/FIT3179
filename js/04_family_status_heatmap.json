@@ -1,0 +1,346 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 425,
+  "height": 310,
+  "config": {
+    "background": "transparent",
+    "font": "Arial, Helvetica, sans-serif",
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "labelColor": "#506D7F",
+      "titleColor": "#24475E",
+      "labelFontSize": 11,
+      "titleFontSize": 12,
+      "gridColor": "#E8EFF5",
+      "domainColor": "#D6E5EF",
+      "tickColor": "#D6E5EF"
+    },
+    "legend": {
+      "labelColor": "#506D7F",
+      "titleColor": "#24475E",
+      "labelFontSize": 11,
+      "padding": 4
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "rect",
+        "cornerRadius": 2,
+        "stroke": "#FFFFFF",
+        "strokeWidth": 2
+      },
+      "encoding": {
+        "x": {
+          "field": "status",
+          "type": "nominal",
+          "sort": [
+            "Critically Endangered",
+            "Endangered",
+            "Vulnerable",
+            "Extinct"
+          ],
+          "title": null,
+          "axis": {
+            "labelAngle": -28,
+            "labelLimit": 145,
+            "labelFontSize": 11
+          }
+        },
+        "y": {
+          "field": "family",
+          "type": "nominal",
+          "sort": [
+            "Muridae",
+            "Macropodidae",
+            "Dasyuridae",
+            "Potoroidae",
+            "Peramelidae",
+            "Vespertilionidae",
+            "Petauridae",
+            "Pseudocheiridae",
+            "Pteropodidae"
+          ],
+          "title": null,
+          "axis": {
+            "labelLimit": 120
+          }
+        },
+        "color": {
+          "field": "count",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              15
+            ],
+            "range": [
+              "#ECF4FA",
+              "#4C88AA"
+            ]
+          },
+          "title": "Entries",
+          "legend": null
+        },
+        "tooltip": [
+          {
+            "field": "family",
+            "type": "nominal",
+            "title": "Family"
+          },
+          {
+            "field": "status",
+            "type": "nominal",
+            "title": "Status"
+          },
+          {
+            "field": "count",
+            "type": "quantitative",
+            "title": "Count"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "fontWeight": "bold",
+        "fontSize": 11
+      },
+      "encoding": {
+        "x": {
+          "field": "status",
+          "type": "nominal",
+          "sort": [
+            "Critically Endangered",
+            "Endangered",
+            "Vulnerable",
+            "Extinct"
+          ],
+          "title": null,
+          "axis": {
+            "labelAngle": -28,
+            "labelLimit": 145,
+            "labelFontSize": 11
+          }
+        },
+        "y": {
+          "field": "family",
+          "type": "nominal",
+          "sort": [
+            "Muridae",
+            "Macropodidae",
+            "Dasyuridae",
+            "Potoroidae",
+            "Peramelidae",
+            "Vespertilionidae",
+            "Petauridae",
+            "Pseudocheiridae",
+            "Pteropodidae"
+          ],
+          "title": null,
+          "axis": {
+            "labelLimit": 120
+          }
+        },
+        "text": {
+          "field": "count",
+          "type": "quantitative"
+        },
+        "color": {
+          "condition": {
+            "test": "datum.count >= 9",
+            "value": "white"
+          },
+          "value": "#24475E"
+        }
+      }
+    }
+  ],
+  "data": {
+    "values": [
+      {
+        "family": "Muridae",
+        "status": "Critically Endangered",
+        "count": 1
+      },
+      {
+        "family": "Muridae",
+        "status": "Endangered",
+        "count": 7
+      },
+      {
+        "family": "Muridae",
+        "status": "Vulnerable",
+        "count": 11
+      },
+      {
+        "family": "Muridae",
+        "status": "Extinct",
+        "count": 14
+      },
+      {
+        "family": "Macropodidae",
+        "status": "Critically Endangered",
+        "count": 1
+      },
+      {
+        "family": "Macropodidae",
+        "status": "Endangered",
+        "count": 8
+      },
+      {
+        "family": "Macropodidae",
+        "status": "Vulnerable",
+        "count": 13
+      },
+      {
+        "family": "Macropodidae",
+        "status": "Extinct",
+        "count": 6
+      },
+      {
+        "family": "Dasyuridae",
+        "status": "Critically Endangered",
+        "count": 0
+      },
+      {
+        "family": "Dasyuridae",
+        "status": "Endangered",
+        "count": 11
+      },
+      {
+        "family": "Dasyuridae",
+        "status": "Vulnerable",
+        "count": 9
+      },
+      {
+        "family": "Dasyuridae",
+        "status": "Extinct",
+        "count": 0
+      },
+      {
+        "family": "Potoroidae",
+        "status": "Critically Endangered",
+        "count": 1
+      },
+      {
+        "family": "Potoroidae",
+        "status": "Endangered",
+        "count": 3
+      },
+      {
+        "family": "Potoroidae",
+        "status": "Vulnerable",
+        "count": 4
+      },
+      {
+        "family": "Potoroidae",
+        "status": "Extinct",
+        "count": 7
+      },
+      {
+        "family": "Peramelidae",
+        "status": "Critically Endangered",
+        "count": 0
+      },
+      {
+        "family": "Peramelidae",
+        "status": "Endangered",
+        "count": 3
+      },
+      {
+        "family": "Peramelidae",
+        "status": "Vulnerable",
+        "count": 4
+      },
+      {
+        "family": "Peramelidae",
+        "status": "Extinct",
+        "count": 7
+      },
+      {
+        "family": "Vespertilionidae",
+        "status": "Critically Endangered",
+        "count": 0
+      },
+      {
+        "family": "Vespertilionidae",
+        "status": "Endangered",
+        "count": 1
+      },
+      {
+        "family": "Vespertilionidae",
+        "status": "Vulnerable",
+        "count": 1
+      },
+      {
+        "family": "Vespertilionidae",
+        "status": "Extinct",
+        "count": 2
+      },
+      {
+        "family": "Petauridae",
+        "status": "Critically Endangered",
+        "count": 1
+      },
+      {
+        "family": "Petauridae",
+        "status": "Endangered",
+        "count": 2
+      },
+      {
+        "family": "Petauridae",
+        "status": "Vulnerable",
+        "count": 1
+      },
+      {
+        "family": "Petauridae",
+        "status": "Extinct",
+        "count": 0
+      },
+      {
+        "family": "Pseudocheiridae",
+        "status": "Critically Endangered",
+        "count": 1
+      },
+      {
+        "family": "Pseudocheiridae",
+        "status": "Endangered",
+        "count": 2
+      },
+      {
+        "family": "Pseudocheiridae",
+        "status": "Vulnerable",
+        "count": 1
+      },
+      {
+        "family": "Pseudocheiridae",
+        "status": "Extinct",
+        "count": 0
+      },
+      {
+        "family": "Pteropodidae",
+        "status": "Critically Endangered",
+        "count": 1
+      },
+      {
+        "family": "Pteropodidae",
+        "status": "Endangered",
+        "count": 1
+      },
+      {
+        "family": "Pteropodidae",
+        "status": "Vulnerable",
+        "count": 1
+      },
+      {
+        "family": "Pteropodidae",
+        "status": "Extinct",
+        "count": 1
+      }
+    ]
+  }
+}

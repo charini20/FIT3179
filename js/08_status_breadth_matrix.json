@@ -1,0 +1,287 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 420,
+  "height": 252,
+  "data": {
+    "values": [
+      {
+        "status": "Critically Endangered",
+        "breadth": 0,
+        "count": 2
+      },
+      {
+        "status": "Critically Endangered",
+        "breadth": 1,
+        "count": 3
+      },
+      {
+        "status": "Critically Endangered",
+        "breadth": 2,
+        "count": 4
+      },
+      {
+        "status": "Critically Endangered",
+        "breadth": 3,
+        "count": 0
+      },
+      {
+        "status": "Critically Endangered",
+        "breadth": 4,
+        "count": 0
+      },
+      {
+        "status": "Critically Endangered",
+        "breadth": 5,
+        "count": 0
+      },
+      {
+        "status": "Critically Endangered",
+        "breadth": 6,
+        "count": 0
+      },
+      {
+        "status": "Critically Endangered",
+        "breadth": 7,
+        "count": 0
+      },
+      {
+        "status": "Endangered",
+        "breadth": 0,
+        "count": 0
+      },
+      {
+        "status": "Endangered",
+        "breadth": 1,
+        "count": 19
+      },
+      {
+        "status": "Endangered",
+        "breadth": 2,
+        "count": 9
+      },
+      {
+        "status": "Endangered",
+        "breadth": 3,
+        "count": 8
+      },
+      {
+        "status": "Endangered",
+        "breadth": 4,
+        "count": 7
+      },
+      {
+        "status": "Endangered",
+        "breadth": 5,
+        "count": 2
+      },
+      {
+        "status": "Endangered",
+        "breadth": 6,
+        "count": 1
+      },
+      {
+        "status": "Endangered",
+        "breadth": 7,
+        "count": 1
+      },
+      {
+        "status": "Vulnerable",
+        "breadth": 0,
+        "count": 0
+      },
+      {
+        "status": "Vulnerable",
+        "breadth": 1,
+        "count": 27
+      },
+      {
+        "status": "Vulnerable",
+        "breadth": 2,
+        "count": 6
+      },
+      {
+        "status": "Vulnerable",
+        "breadth": 3,
+        "count": 8
+      },
+      {
+        "status": "Vulnerable",
+        "breadth": 4,
+        "count": 7
+      },
+      {
+        "status": "Vulnerable",
+        "breadth": 5,
+        "count": 5
+      },
+      {
+        "status": "Vulnerable",
+        "breadth": 6,
+        "count": 3
+      },
+      {
+        "status": "Vulnerable",
+        "breadth": 7,
+        "count": 1
+      },
+      {
+        "status": "Extinct",
+        "breadth": 0,
+        "count": 3
+      },
+      {
+        "status": "Extinct",
+        "breadth": 1,
+        "count": 12
+      },
+      {
+        "status": "Extinct",
+        "breadth": 2,
+        "count": 10
+      },
+      {
+        "status": "Extinct",
+        "breadth": 3,
+        "count": 2
+      },
+      {
+        "status": "Extinct",
+        "breadth": 4,
+        "count": 7
+      },
+      {
+        "status": "Extinct",
+        "breadth": 5,
+        "count": 3
+      },
+      {
+        "status": "Extinct",
+        "breadth": 6,
+        "count": 2
+      },
+      {
+        "status": "Extinct",
+        "breadth": 7,
+        "count": 0
+      }
+    ]
+  },
+  "config": {
+    "background": "transparent",
+    "font": "Arial, Helvetica, sans-serif",
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "labelColor": "#506D7F",
+      "titleColor": "#24475E",
+      "labelFontSize": 11,
+      "titleFontSize": 12,
+      "gridColor": "#E8EFF5",
+      "domainColor": "#D6E5EF",
+      "tickColor": "#D6E5EF"
+    },
+    "legend": {
+      "labelColor": "#506D7F",
+      "titleColor": "#24475E",
+      "labelFontSize": 11,
+      "padding": 4
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "rect",
+        "stroke": "#FFFFFF",
+        "strokeWidth": 2
+      },
+      "encoding": {
+        "x": {
+          "field": "breadth",
+          "type": "ordinal",
+          "sort": "ascending",
+          "title": "States/territories flagged",
+          "axis": {
+            "labelAngle": 0
+          }
+        },
+        "y": {
+          "field": "status",
+          "type": "nominal",
+          "sort": [
+            "Critically Endangered",
+            "Endangered",
+            "Vulnerable",
+            "Extinct"
+          ],
+          "title": null,
+          "axis": {
+            "labelLimit": 150
+          }
+        },
+        "color": {
+          "field": "count",
+          "type": "quantitative",
+          "legend": null,
+          "scale": {
+            "range": [
+              "#ECF4FA",
+              "#4C88AA"
+            ]
+          }
+        },
+        "tooltip": [
+          {
+            "field": "status",
+            "type": "nominal"
+          },
+          {
+            "field": "breadth",
+            "type": "quantitative",
+            "title": "States/territories"
+          },
+          {
+            "field": "count",
+            "type": "quantitative",
+            "title": "Listed taxa"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "fontSize": 12,
+        "fontWeight": "bold"
+      },
+      "encoding": {
+        "x": {
+          "field": "breadth",
+          "type": "ordinal",
+          "sort": "ascending"
+        },
+        "y": {
+          "field": "status",
+          "type": "nominal",
+          "sort": [
+            "Critically Endangered",
+            "Endangered",
+            "Vulnerable",
+            "Extinct"
+          ]
+        },
+        "text": {
+          "field": "count",
+          "type": "quantitative"
+        },
+        "color": {
+          "condition": {
+            "test": "datum.count >= 14",
+            "value": "white"
+          },
+          "value": "#1D4157"
+        }
+      }
+    }
+  ]
+}
